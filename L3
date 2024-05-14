@@ -50,6 +50,7 @@ _G.Races_Settings = { -- ตั้งค่าเผ่า
         ["v3"] = true,
         ["Races_Lock"] = {
             ["Races"] = { -- Select Races U want
+                ["Mink"] = true,
                 ["Human"] = true,
                 ["Fishman"] = true
             },
