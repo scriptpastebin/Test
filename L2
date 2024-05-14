@@ -1,18 +1,21 @@
-if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
-
-_G.Setting = {
-    -- Booster
-    ['White Screen'] = true, -- Booster RAM / จอขาวลด RAM
-    ['FPS Booster'] = true, -- Booster CPU / ภาพกาก
-    -- Sanguine Art
-    ['Auto Sanguine Art'] = true, -- Enabled / เปิดใช้งาน
-    ['Owner Beast Hunter'] = 'XxArSkaysxX' -- Write Name (ID Have Beast Hunter) / ใส่ชื่อไอดีที่มีเรือ Beast Hunter
+_G.CrewSettings = {
+    ["OwnBoat"] = "XxArSkaysxX", -- ชื่อคนที่มีเรือสำหรับดึงหัวใจ
+    ["Method"] = "SanguineArt", -- ใส่ SanguineArt เพื่อทำหมัด หรือใส่ CraftBoat สำหรับทำแค่เรือหรือดึงหัวใจ ไม่ใส่เลยคือทำหมัด ( ไม่ใส่เลยคือลบบรรทัดนี้ไม่ใช่ "" )
+    ["CrewMember"] = { -- ชื่อรหัสที่จะทำใส่ได้ 11 ตัว
+"fiarramaay",
+"fuoiniauuu",
+"shnaraaaya",
+"dcgtcxtsr",
+"auniofizai",
+"ibmlsjmbn",,
+"iahpyoaznn",
+"mnuiyisuua",
+"iichafnruh",
+"ppiszcfpay",
+"byymansbbo"
+    }
 }
-_G.Webhook = {
-    ["Enabled"] = true, -- Enabled / เปิดใช้งาน
-    ["Url"] = "" -- Link Webhook discord / ลิ้งค์เว็บฮุก
-}
 
-getgenv().Mode = "7M" -- "7M" / "V4" / "Capcut" / "Kaitun" / "Pro" 
-script_key="wtRTobFVoZNLhFAOCHdGQaKpkxxPwonX";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5d8305a729aa619acf51ae10cd76891d.lua"))()
+getgenv().Key = "MARU_NewM-2229C4OD0RXMYM9"
+getgenv().id = "823163528407547924"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/LoaderxP.lua"))()
