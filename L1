@@ -11,7 +11,7 @@ _G.Setting = {
     ['Auto Farm Level'] = false,
 
     --🩸 Sanguine Art
-    ['Auto Buy Sanguine Art'] = false,
+    ['Auto Buy Sanguine Art'] = true,
 
     -- 🌊 Leviathan
     ['Auto Get Leviathan Heart'] = true,
