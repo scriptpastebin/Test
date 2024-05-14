@@ -102,6 +102,6 @@ _G.GunSettings = { -- ปืนที่จะทำ
     ['SoulGuitar'] = true
 }
 -- Script Here !!!
-getgenv().Key = "MARU_NewM-2229C4OD0RXMYM9"
-getgenv().id = "823163528407547924"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/LoaderxP.lua"))()
+(getgenv()).key = "MARU8JK3EQIUJW9JO5TVG07VDH";
+(getgenv()).id = "823163528407547924";
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruComkak/main/PCBit.lua"))()
