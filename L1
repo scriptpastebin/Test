@@ -1,42 +1,19 @@
 if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 
 _G.Setting = {
-    -- FPS Booster
-    ['Select Team'] = 'Marines', -- Pirates , Marines
-    ['White Screen'] = true,
-    ['FPS Booster'] = true,
-    ['Close Ui'] = true,
-
-    -- 🌱 Level
-    ['Auto Farm Level'] = false,
-
-    --🩸 Sanguine Art
-    ['Auto Buy Sanguine Art'] = true,
-
-    -- 🌊 Leviathan
-    ['Auto Get Leviathan Heart'] = true,
-    ['Auto Farm Leviathan'] = true,
-    ['Auto Reset Cooldown'] = true,
-    ['Owner Beast Hunter'] = 'nrayoisanu',
-
-    -- 🧩 Dark Fragment
-    ['Auto Farm Darkbeard'] = false,
-    ['Chest Order'] = 80,
-
-    -- 🧩 Item cost to buy
-    ['Auto Farm Demonic Wisps'] = false,
-    ['Auto Farm Vampire Fangs'] = false,
-
-    --🌀 Fox Lamp
-    ['Auto Azure Random'] = false,
-    ['Auto Farm Azure'] = false,
-    ['Auto Hop Server Azure'] = false,
-
-    --⚔️ Bounty
-    ['Auto Farm Bounty'] = false,
-    ['Auto Select All Player'] = false,
-    ['Auto Hop Server Bounty'] = false
+    -- Booster
+    ['White Screen'] = true, -- Booster RAM / จอขาวลด RAM
+    ['FPS Booster'] = true, -- Booster CPU / ภาพกาก
+    -- Sanguine Art
+    ['Auto Sanguine Art'] = true, -- Enabled / เปิดใช้งาน
+    ['Owner Beast Hunter'] = 'nrayoisanu' -- Write Name (ID Have Beast Hunter) / ใส่ชื่อไอดีที่มีเรือ Beast Hunter
+}
+_G.Webhook = {
+    ["Enabled"] = true, -- Enabled / เปิดใช้งาน
+    ["Url"] = "" -- Link Webhook discord / ลิ้งค์เว็บฮุก
 }
 
-script_key = "bsWTjPJLqcDHzuUdYKjNWztXufGiOEXo";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/58328ea2259c450ea64a10414568a7dc.lua"))()
+getgenv().Mode = "7M" -- "7M" / "V4" / "Capcut" / "Kaitun" / "Pro" 
+script_key="wtRTobFVoZNLhFAOCHdGQaKpkxxPwonX";
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5d8305a729aa619acf51ae10cd76891d.lua"))()
+
