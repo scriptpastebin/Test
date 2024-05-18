@@ -2,17 +2,17 @@ _G.CrewSettings = {
     ["OwnBoat"] = "nrayoisanu", -- ชื่อคนที่มีเรือสำหรับดึงหัวใจ
     ["Method"] = "SanguineArt", -- ใส่ SanguineArt เพื่อทำหมัด หรือใส่ CraftBoat สำหรับทำแค่เรือหรือดึงหัวใจ ไม่ใส่เลยคือทำหมัด ( ไม่ใส่เลยคือลบบรรทัดนี้ไม่ใช่ "" )
     ["CrewMember"] = { -- ชื่อรหัสที่จะทำใส่ได้ 11 ตัว
-"uaarzrrihr",
-"szyaaiacuh",
-"szuaapnaao",
-"sznsaiurbu",
-"sybnayymhh",
-"syaansazaa",
-"barrbiuaub",
-"bapunbybfh",
-"baniqueimn9121",
-"bafzpuasnb",
-"baaiayzync"
+"obaahisman",
+"zfhhpoccaa",
+"byabbsiaap",
+achfirymhr",
+"unfssosbuu",
+"naaaauoyam",
+hbssoayzhh",
+"aausbfhapr",
+"yarssioaar",
+"ouamucorsa",
+"pyhrfbuhou"
     }
 }
 
