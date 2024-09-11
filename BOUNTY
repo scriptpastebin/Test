@@ -140,9 +140,9 @@ getgenv().WeaponsSetting = {
         },
     },
 }
-getgenv().Theme = false { -- getgenv().Theme = false if you want to disable
+getgenv().Theme = false, { -- getgenv().Theme = false if you want to disable
     OldTheme = false,
-    Name="Miko", --"Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
+    Name="", --"Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
     Custom={
             ["Enable"] = false,
             ['char_size'] = UDim2.new(0.668, 0, 1.158, 0),
