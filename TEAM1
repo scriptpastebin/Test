@@ -12,7 +12,7 @@ _G.CrewSettings = {
 "gruewi500",
 "zaleco243",
 "entgiv904",
-"cataope122",
+"cataope122"
     }
 }
 getgenv().Key = "MARU_NewM-VDWSLAS3YKBG9WM"
