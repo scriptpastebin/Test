@@ -1,18 +1,50 @@
+if not game:IsLoaded() then game.Loaded:Wait() end
+if game.PlaceId == 4442272183 then
+    SecondSea = true
+elseif game.PlaceId == 7449423635 then
+    ThirdSea = true
+end
+
+
 _G.CrewSettings = {
-    ["OwnBoat"] = "XxArSkaysxX", -- ชื่อคนที่มีเรือสำหรับดึงหัวใจ
-    ["Method"] = "SanguineArt", -- ใส่ SanguineArt เพื่อทำหมัด หรือใส่ CraftBoat สำหรับทำแค่เรือหรือดึงหัวใจ ไม่ใส่เลยคือทำหมัด ( ไม่ใส่เลยคือลบบรรทัดนี้ไม่ใช่ "" )
-    ["CrewMember"] = { -- ชื่อรหัสที่จะทำใส่ได้ 11 ตัว
-"nitksco7699",
-"nakasci2888",
-"sachlus8017",
-"alteli459",
-"marssw384",
-"ceruwob517",
-"mondper1434",
-"kinkgla1264",
-"oblapre292"
-    }
+    ["OwnBoat"] = "XxArSkaysxX",
+    ["Method"] = "SanguineArt",
+    ["CrewMember"] = {}
 }
-getgenv().Key = "MARU_NewM-VDWSLAS3YKBG9WM"
-getgenv().id = "823163528407547924"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/LoaderxP.lua"))()
+
+local function IsPlayerInList(name)
+    for _, playerName in pairs(_G.CrewSettings["CrewMember"]) do
+        if playerName == name then
+            return true
+        end
+    end
+    return false
+end
+
+function PlayerInsert()
+    for _, v in pairs(game:GetService("Players"):GetChildren()) do
+        if v:IsA("Player") then
+            if v.Name ~= _G.CrewSettings["OwnBoat"] and ThirdSea then
+                if not IsPlayerInList(v.Name) then
+                    table.insert(_G.CrewSettings["CrewMember"], v.Name)
+                end
+              elseif v.Name == game:GetService("Players").LocalPlayer.Name and SecondSea then
+                if not IsPlayerInList(v.Name) then
+                    table.insert(_G.CrewSettings["CrewMember"], v.Name)
+                end
+            end
+        end
+    end
+end
+
+
+repeat task.wait() until (#game:GetService("Players"):GetPlayers() >= 12 and ThirdSea) or SecondSea
+
+PlayerInsert()
+
+if #_G.CrewSettings["CrewMember"] >= 11 or SecondSea then
+    print("Kondisi terpenuhi")
+    getgenv().Key = "MARU_NewM-VDWSLAS3YKBG9WM"
+    getgenv().id = "823163528407547924"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/LoaderxP.lua"))()
+end
