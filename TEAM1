@@ -1,7 +1,7 @@
 if not game:IsLoaded() then game.Loaded:Wait() end
 if game.PlaceId == 4442272183 then
     SecondSea = true
-elseif game.PlaceId == 7449423635 then
+elseif game.PlaceId == 4442272183 then
     ThirdSea = true
 end
 
