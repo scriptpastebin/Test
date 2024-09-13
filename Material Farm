@@ -1,4 +1,0 @@
-repeat task.wait() until game:IsLoaded()
-getgenv().Key = "72b6b6da41109ad9"
-getgenv().NewBanana = false
-loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
