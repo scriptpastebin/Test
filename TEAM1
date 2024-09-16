@@ -2,17 +2,17 @@ _G.CrewSettings = {
     ["OwnBoat"] = "XxArSkaysxX", -- ชื่อคนที่มีเรือสำหรับดึงหัวใจ
     ["Method"] = "SanguineArt", -- ใส่ SanguineArt เพื่อทำหมัด หรือใส่ CraftBoat สำหรับทำแค่เรือหรือดึงหัวใจ ไม่ใส่เลยคือทำหมัด ( ไม่ใส่เลยคือลบบรรทัดนี้ไม่ใช่ "" )
     ["CrewMember"] = { -- ชื่อรหัสที่จะทำใส่ได้ 11 ตัว
-"edwast797",
-"shovsur3389",
-"idealun791",
-"undobie991",
-"goaddis3333",
-"rheafei0562",
-"divifin249",
-"reddmar8884",
-"gordsta2024",
-"tuchfl524",
-"rozalo698"
+"destisam5296",
+"gosside231",
+"itritat109",
+"gohrpan894",
+"rasuna558",
+"kimapu799",
+"krahdel827",
+"rubdokin8632",
+"advansla1846",
+"slighran6975",
+"laxatter726"
     }
 }
 getgenv().Key = "MARU_NewM-VDWSLAS3YKBG9WM"
