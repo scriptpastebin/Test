@@ -1,20 +1,40 @@
+if not game:IsLoaded() then game.Loaded:Wait() end
+
 _G.CrewSettings = {
-    ["OwnBoat"] = "XxArSkaysxX", -- ชื่อคนที่มีเรือสำหรับดึงหัวใจ
-    ["Method"] = "SanguineArt", -- ใส่ SanguineArt เพื่อทำหมัด หรือใส่ CraftBoat สำหรับทำแค่เรือหรือดึงหัวใจ ไม่ใส่เลยคือทำหมัด ( ไม่ใส่เลยคือลบบรรทัดนี้ไม่ใช่ "" )
-    ["CrewMember"] = { -- ชื่อรหัสที่จะทำใส่ได้ 11 ตัว
-"leliech041",
-"cabbape264",
-"degenla468",
-"lupicab428",
-"goodre778",
-"slithe386",
-"plushse890",
-"humblsa864",
-"carrido024",
-"sliceof812",
-"granzun192"
-    }
+    ["OwnBoat"] = "burnaxell",
+    ["Method"] = "SanguineArt",
+    ["CrewMember"] = {}
 }
-getgenv().Key = "MARU_NewM-VDWSLAS3YKBG9WM"
-getgenv().id = "823163528407547924"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/LoaderxP.lua"))()
+
+local function IsPlayerInList(name)
+    for _, playerName in pairs(_G.CrewSettings["CrewMember"]) do
+        if playerName == name then
+            return true
+        end
+    end
+    return false
+end
+
+function PlayerInsert()
+    for _, v in pairs(game:GetService("Players"):GetChildren()) do
+        if v:IsA("Player") then
+            if v.Name ~= _G.CrewSettings["OwnBoat"] then
+                if not IsPlayerInList(v.Name) then
+                    table.insert(_G.CrewSettings["CrewMember"], v.Name)
+                end
+            end
+        end
+    end
+end
+
+
+repeat task.wait() until #game:GetService("Players"):GetPlayers() >= 3
+
+PlayerInsert()
+
+if #_G.CrewSettings["CrewMember"] >= 0 then
+    print("Kondisi terpenuhi")
+    getgenv().Key = "MARU_NewM-VDWSLAS3YKBG9WM"
+    getgenv().id = "823163528407547924"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/LoaderxP.lua"))()
+end
