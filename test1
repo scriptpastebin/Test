@@ -8,7 +8,7 @@ _G.Setting = {
     },
     -- Booster
     ['White Screen'] = true, 
-    ['FPS Booster'] = false 
+    ['FPS Booster'] = true 
 }
 
 local function IsPlayerInList(name)
