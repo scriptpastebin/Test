@@ -1,3 +1,22 @@
-getgenv().Key = "MARU-4N3GP-E9EJS-7112-IDJMH-YMQSV"
-getgenv().id = "823163528407547924"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
+if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
+
+_G.Setting = {
+    ['Evo Race V4'] = { -- Setting Team / ตั้งค่าทีม
+        ['Helper'] = "JVyHVriSnfp", -- Helper / ผู้ช่วย
+        ['Helper2'] = "YSUatnbGWoE", -- Helper2 / ผู้ช่วยคนที่ 2
+        ['Farm'] = { -- Farming V4 / ตัวที่ต้องการทำ V4
+            "haesre145",
+            "hohldaz9217",
+            "cresbul0199",
+            "remarke958",
+            "jeffeun069",
+            "scalzpr964"
+        } 
+    },
+    -- Booster
+    ['White Screen'] = true, 
+    ['FPS Booster'] = true 
+}
+
+script_key="KEY";
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2d1ebc6b47e1b9c4e34c97898f9b7c4b.lua"))()
