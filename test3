@@ -1,22 +1,47 @@
 if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 
-_G.Setting = {
-    ['Evo Race V4'] = { -- Setting Team / ตั้งค่าทีม
-        ['Helper'] = "JVyHVriSnfp", -- Helper / ผู้ช่วย
-        ['Helper2'] = "YSUatnbGWoE", -- Helper2 / ผู้ช่วยคนที่ 2
-        ['Farm'] = { -- Farming V4 / ตัวที่ต้องการทำ V4
-            "haesre145",
-            "hohldaz9217",
-            "cresbul0199",
-            "remarke958",
-            "jeffeun069",
-            "scalzpr964"
-        } 
+_G.Settings_V4 = {
+    ["LockTiers"] = 5, -- เตะตอนเทียร์เท่านั้นหรือมากกว่า ( ออโต้ปิด ระบบรีจอยในสคริปต์ ) ถ้าอยากปิด หรือตัวช่วย T10 ปรับเป็น11 / Kick when tier more than your settings ( If u not want to kick just set to 11 )
+    ["Lever"] = false, -- Auto Pull Lever
+    ["InVIPServ"] = true, -- Crash when full moon end
+    ["HelperNameList"] = { -- Put the helper account name
+        "JVyHVriSnfp",
+        "YSUatnbGWoE"
     },
-    -- Booster
-    ['White Screen'] = true, 
-    ['FPS Booster'] = true 
+    ["V4FarmList"] = { }
 }
 
-script_key="xrxpyIsEePaEBOoBvsWVasURDdmqUhDJ";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2d1ebc6b47e1b9c4e34c97898f9b7c4b.lua"))()
+
+local function IsPlayerInList(name)
+    for _, playerName in pairs(_G.Settings_V4["V4FarmList"]) do
+        if playerName == name then
+            return true
+        end
+    end
+    return false
+end
+
+function PlayerInsert()
+    for _, v in pairs(game:GetService("Players"):GetChildren()) do
+        if v:IsA("Player") then
+            if v.Name ~= _G.Settings_V4["HelperNameList"] then
+                if not IsPlayerInList(v.Name) then
+                    table.insert(_G.Settings_V4["V4FarmList"], v.Name)
+                end
+            end
+        end
+    end
+end
+
+repeat task.wait() until #game:GetService("Players"):GetPlayers() >= 1
+
+PlayerInsert()
+
+if #_G.Settings_V4["V4FarmList"] >= 0 then
+ print("Kondisi terpenuhi")
+
+getgenv().Key = "MARU_V4-QAL7J6IUH01QH2L"
+getgenv().id = "823163528407547924"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()
+end
+
