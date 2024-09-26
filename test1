@@ -1,18 +1,24 @@
-if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
-
-_G.Setting = {
-    ['Evo Race V4'] = { -- Setting Team / ตั้งค่าทีม
-        ['Helper'] = "PpGrmYKceMz", -- Helper / ผู้ช่วย
-        ['Helper2'] = "zHEYIccDZls", -- Helper2 / ผู้ช่วยคนที่ 2
-        ['Farm'] = { } 
+_G.V4Config = { 
+    ['Auto Race V4'] = {
+        ["Enable"] = true,
+        ["Kick When Tier"] = true,
+        ["Custom Tier"] = 10,
+        ["Kick When Tier 10"] = false,
+        ["ignore wait"] = true,
+        ["Helper Gear Change"] = false,
+        ['Helper'] = {
+            "burnaxell",
+            "", 
+        },
+        ['Main Acc'] = { }
     },
-    -- Booster
-    ['White Screen'] = false, 
-    ['FPS Booster'] = true 
+
+    ['Close Ui'] = true,
+    ['Low Texture'] = false
 }
 
 local function IsPlayerInList(name)
-    for _, playerName in pairs(_G.Setting["Evo Race V4"]['Farm']) do
+    for _, playerName in pairs(_G.V4Config["Auto Race V4"]['Main Acc']) do
         if playerName == name then
             return true
         end
@@ -23,22 +29,23 @@ end
 function PlayerInsert()
     for _, v in pairs(game:GetService("Players"):GetChildren()) do
         if v:IsA("Player") then
-            if v.Name ~= _G.Setting["Evo Race V4"]['Helper'] and v.Name ~= _G.Setting["Evo Race V4"]['Helper2'] then
+            if v.Name ~= _G.V4Config["Auto Race V4"]['Helper'] then
                 if not IsPlayerInList(v.Name) then
-                    table.insert(_G.Setting["Evo Race V4"]['Farm'], v.Name)
+                    table.insert(_G.V4Config["Auto Race V4"]['Main Acc'], v.Name)
                 end
             end
         end
     end
 end
 
-repeat task.wait() until #game:GetService("Players"):GetPlayers() >= 1
+repeat task.wait() until #game:GetService("Players"):GetPlayers() >= 3
 
 PlayerInsert()
 
-if #_G.Setting["Evo Race V4"]['Farm'] >= 0 then
-  print("Kondisi terpenuhi")
-     
-  script_key="xrxpyIsEePaEBOoBvsWVasURDdmqUhDJ";
-  loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2d1ebc6b47e1b9c4e34c97898f9b7c4b.lua"))()
+if #_G.V4Config["Auto Race V4"]['Main Acc'] >= 0 then
+ print("Kondisi terpenuhi")
+
+_G.Key = "WDP9I-PH72G-98P91"
+_G.DiscordId = "1197947995338059917"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Natsuhanaki/Royx_PC/main/loader.lua"))();
 end
