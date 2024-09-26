@@ -1,5 +1,3 @@
-if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
-
 _G.Settings_V4 = {
     ["LockTiers"] = 5, -- เตะตอนเทียร์เท่านั้นหรือมากกว่า ( ออโต้ปิด ระบบรีจอยในสคริปต์ ) ถ้าอยากปิด หรือตัวช่วย T10 ปรับเป็น11 / Kick when tier more than your settings ( If u not want to kick just set to 11 )
     ["Lever"] = false, -- Auto Pull Lever
@@ -17,3 +15,6 @@ _G.Settings_V4 = {
         "baroume045"
     }
 }
+getgenv().Key = "MARU_V4-QAL7J6IUH01QH2L"
+getgenv().id = "823163528407547924"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()
