@@ -9,9 +9,9 @@ _G.Settings_V4 = {
     ["V4FarmList"] = { -- ตัวฟาร์มใส่ได้ 10 ตัวเผ่าไม่ซ้ำตัวช่วยพอ / Put account name u want to farm v4
         "shalfox4301",
         "mossabr9460",
-        "ichirac538",
-        "kosldim755",
-        "pilldis1678",
+        "lasedef049",
+        "rivedar6596",
+        "tipoplo511",
         "grimamm979"
     }
 }
