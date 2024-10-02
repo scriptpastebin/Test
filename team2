@@ -9,8 +9,8 @@ _G.V4Config = {
         ["ignore wait"] = true,
         ["Helper Gear Change"] = false,
         ['Helper'] = {
-            "burnaxell",
-            "", 
+            "doorras516",
+            "golefla253", 
         },
         ['Main Acc'] = { }
     },
