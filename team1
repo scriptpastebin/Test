@@ -9,7 +9,7 @@ _G.Settings_V4 = {
         "phimco187",
         "granna868"
     },
-    ["V4FarmList"] = { }
+    ["V4FarmList"] = {}
 }
 
 local function IsPlayerInList(name)
