@@ -47,7 +47,7 @@ PlayerInsert()
 if #_G.V4Config["Auto Race V4"]['Main Acc'] >= 0 then
  print("Kondisi terpenuhi")
 
-script_key="KGQFR-TXNAS-0Y4TF";
+_G.Key = "KGQFR-TXNAS-0Y4TF"
 _G.DiscordId = "823163528407547924"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Natsuhanaki/Royx_PC/main/loader.lua"))();
 end
