@@ -3,7 +3,7 @@ if not game:IsLoaded() then game.Loaded:Wait() end
 _G.Settings_V4 = {
     ["LockTiers"] = 11,
     ["Lever"] = false,
-    ["InVIPServ"] = true, -
+    ["InVIPServ"] = true,
     ["HelperNameList"] = {
         "lupiare206",
         "phimco187",
