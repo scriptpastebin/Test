@@ -1,8 +1,10 @@
+if not game:IsLoaded() then game.Loaded:Wait() end
+
 _G.Settings_V4 = {
-    ["LockTiers"] = 11, -- เตะตอนเทียร์เท่านั้นหรือมากกว่า ( ออโต้ปิด ระบบรีจอยในสคริปต์ ) ถ้าอยากปิด หรือตัวช่วย T10 ปรับเป็น11 / Kick when tier more than your settings ( If u not want to kick just set to 11 )
-    ["Lever"] = false, -- Auto Pull Lever
-    ["InVIPServ"] = true, -- Crash when full moon end
-    ["HelperNameList"] = { -- Put the helper account name
+    ["LockTiers"] = 11,
+    ["Lever"] = false,
+    ["InVIPServ"] = true, -
+    ["HelperNameList"] = {
         "lupiare206",
         "phimco187",
         "granna868"
@@ -22,7 +24,7 @@ end
 function PlayerInsert()
     for _, v in pairs(game:GetService("Players"):GetChildren()) do
         if v:IsA("Player") then
-            if v.Name ~= _G.Settings_V4 ['HelperNameList'] then
+            if v.Name ~= _G.Settings_V4['HelperNameList'] then
                 if not IsPlayerInList(v.Name) then
                     table.insert(_G.Settings_V4["V4FarmList"], v.Name)
                 end
@@ -37,7 +39,7 @@ PlayerInsert()
 
 if #_G.Settings_V4["V4FarmList"] >= 0 then
   print("Kondisi terpenuhi")
-     
-getgenv().Key = "MARU_V4-QAL7J6IUH01QH2L"
-getgenv().id = "823163528407547924"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()
+  getgenv().Key = "MARU_V4-QAL7J6IUH01QH2L"
+  getgenv().id = "823163528407547924"
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()   
+end
