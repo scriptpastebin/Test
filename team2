@@ -1,3 +1,5 @@
+if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
+
 _G.Settings_V4 = {
     ["LockTiers"] = 11, -- เตะตอนเทียร์เท่านั้นหรือมากกว่า ( ออโต้ปิด ระบบรีจอยในสคริปต์ ) ถ้าอยากปิด หรือตัวช่วย T10 ปรับเป็น11 / Kick when tier more than your settings ( If u not want to kick just set to 11 )
     ["Lever"] = false, -- Auto Pull Lever
@@ -6,19 +8,37 @@ _G.Settings_V4 = {
         "doorras516",
         "golefla253"
     },
-    ["V4FarmList"] = { -- ตัวฟาร์มใส่ได้ 10 ตัวเผ่าไม่ซ้ำตัวช่วยพอ / Put account name u want to farm v4
-        "vonbeha693",
-        "longsta671",
-        "veccba775",
-        "preide283",
-        "mohabr300",
-        "gullco567",
-        "atypren728",
-        "savarex863",
-        "oshepl891",
-        "soveyma413"
-    }
+    ["V4FarmList"] = { }
 }
-getgenv().Key = "MARU_V4-QAL7J6IUH01QH2L"
-getgenv().id = "823163528407547924"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()
+
+local function IsPlayerInList(name)
+    for _, playerName in pairs(_G.Settings_V4["V4FarmList"]) do
+        if playerName == name then
+            return true
+        end
+    end
+    return false
+end
+
+function PlayerInsert()
+    for _, v in pairs(game:GetService("Players"):GetChildren()) do
+        if v:IsA("Player") then
+            if v.Name ~= _G.Settings_V4 ['HelperNameList'] then
+                if not IsPlayerInList(v.Name) then
+                    table.insert(_G.Settings_V4["V4FarmList"], v.Name)
+                end
+            end
+        end
+    end
+end
+
+repeat task.wait() until #game:GetService("Players"):GetPlayers() >= 1
+
+PlayerInsert()
+
+if #_G.Settings_V4["V4FarmList"] >= 0 then
+  print("Kondisi terpenuhi")
+     
+  script_key="KGQFR-TXNAS-0Y4TF";
+  loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2d1ebc6b47e1b9c4e34c97898f9b7c4b.lua"))()
+end
