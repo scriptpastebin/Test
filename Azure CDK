@@ -18,12 +18,12 @@ getgenv().FpsCap = 10
         SnipeFruit = true,
         SnipeFruitMirage = true,
         HopIfFoundNearExploiter = false,
-        HopHakiColor =false,
+        HopHakiColor = false,
         HopTushita = false,
         HopValkyriehelm = false,
-        HopMirrorFractal=false,
-        FarmPole = false, -- Turn off If Want Focus Level
-        FarmItems = true, --Turn off If Want Focus Level And CDK, THis Only get After You Get God Human
+        HopMirrorFractal = false,
+        FarmPole = false,
+        FarmItems = true,
         DisableSoulGuitar = false,
         DisableCDK = false,
         DisableRaceEvolve = false,
@@ -31,7 +31,7 @@ getgenv().FpsCap = 10
             Enable = true,
             Races = {"Human","Mink","Fishman","Skypiea"}
         },
-       MinFragment = 20000, --Farm After Max Level
+       MinFragment = 20000,
     }
 getgenv().Team = "Pirates"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/vinhuchi/rblx/main/W-azure/BloxFruit/OneClickLoader.lua"))() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/vinhuchi/rblx/main/W-azure/BloxFruit/OneClickLoader.lua"))()
