@@ -1,0 +1,44 @@
+if not game:IsLoaded() then game.Loaded:Wait() end
+
+_G.Settings_V4 = {
+    ["LockTiers"] = 11,
+    ["Lever"] = true,
+    ["InVIPServ"] = true,
+    ["HelperNameList"] = {
+        "",
+        ""
+    },
+    ["V4FarmList"] = { }
+}
+
+local function IsPlayerInList(name)
+    for _, playerName in pairs(_G.Settings_V4["V4FarmList"]) do
+        if playerName == name then
+            return true
+        end
+    end
+    return false
+end
+
+function PlayerInsert()
+    for _, v in pairs(game:GetService("Players"):GetChildren()) do
+        if v:IsA("Player") then
+            if v.Name ~= _G.Settings_V4['HelperNameList'] then
+                if not IsPlayerInList(v.Name) then
+                    table.insert(_G.Settings_V4["V4FarmList"], v.Name)
+                end
+            end
+        end
+    end
+end
+
+repeat task.wait() until #game:GetService("Players"):GetPlayers() >= 3
+
+PlayerInsert()
+
+if #_G.Settings_V4["V4FarmList"] >= 0 then
+  print("Kondisi terpenuhi")
+  getgenv().Key = "MARU_V4-QAL7J6IUH01QH2L"
+  getgenv().id = "823163528407547924"
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()   
+end
