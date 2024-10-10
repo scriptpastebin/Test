@@ -2,7 +2,13 @@ if not game:IsLoaded() then game.Loaded:Wait() end
 
 _G.CrewSettings = {
     ["OwnBoat"] = "ghjG5yu7eEkmnUH",
-    ["Method"] = "SanguineArt",
+    ["Method"] = "CraftBoat",
+    ['UseSkill'] = {
+        ['Z'] = true,
+        ['X'] = true,
+        ['C'] = true,
+        ['V'] = true
+    },
     ["CrewMember"] = {}
 }
 
