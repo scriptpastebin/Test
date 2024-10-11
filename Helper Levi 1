@@ -1,0 +1,17 @@
+_G.CrewSettings = {
+    ["OwnBoat"] = "XxArSkaysxX", -- ชื่อคนที่มีเรือสำหรับดึงหัวใจ
+    ["Method"] = "SanguineArt", -- SanguineArt, CraftBoat
+    ['UseSkill'] = {
+        ['Z'] = true,
+        ['X'] = true,
+        ['C'] = true,
+        ['V'] = true
+    },
+    ["CrewMember"] = {
+        "",
+
+    }
+}
+getgenv().Key = "MARU_NewM-TTC9XYLBAY6BAZ6"
+getgenv().id = "823163528407547924"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/LoaderxP.lua"))()
