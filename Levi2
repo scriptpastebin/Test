@@ -10,15 +10,12 @@ _G.CrewSettings = {
     ["CrewMember"] = {
 "kleccor031",
 "calaan432",
-"seingo470",
-"mancisc330",
-"iserta496",
-"szaryo518",
 "diggdr498",
 "battca480",
-"palagal516",
-"resesta625",
-"lortung958"
+"lortung958",
+"purplja088",
+"pantrta385",
+"chervte438"
     }
 }
 getgenv().Key = "MARU_NewM-TTC9XYLBAY6BAZ6"
