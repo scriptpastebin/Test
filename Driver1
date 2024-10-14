@@ -1,0 +1,14 @@
+_G.CrewSettings = {
+    ["OwnBoat"] = "XxArSkaysxX", -- ชื่อคนที่มีเรือสำหรับดึงหัวใจ
+    ["Method"] = "SanguineArt", -- SanguineArt, CraftBoat
+    ['UseSkill'] = {
+        ['Z'] = true,
+        ['X'] = true,
+        ['C'] = true,
+        ['V'] = true
+    },
+    ["CrewMember"] = {
+        "",
+
+    }
+}
