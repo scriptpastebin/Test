@@ -25,7 +25,7 @@ function PlayerInsert()
         if v:IsA("Player") then
             if v.Name ~= _G.Settings_V4["HelperNameList"] then
                 if not IsPlayerInList(v.Name) then
-                    table.insert(_G.Setting["HelperNameList"], v.Name)
+                    table.insert(_G.Setting["V4FarmList"], v.Name)
                 end
             end
         end
