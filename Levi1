@@ -1,17 +1,46 @@
-if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
+if not game:IsLoaded() then game.Loaded:Wait() end
 
-_G.Setting = {
-    -- Booster
-    ['White Screen'] = true, -- Booster RAM / จอขาวลด RAM
-    ['FPS Booster'] = true, -- Booster CPU / ภาพกาก
-    -- Sanguine Art
-    ['Auto Sanguine Art'] = true, -- Enabled / เปิดใช้งาน
-    ['Owner Beast Hunter'] = 'XxArSkaysxX' -- Write Name (ID Have Beast Hunter) / ใส่ชื่อไอดีที่มีเรือ Beast Hunter
-}
-_G.Webhook = {
-    ["Enabled"] = false, -- Enabled / เปิดใช้งาน
-    ["Url"] = "" -- Link Webhook discord / ลิ้งค์เว็บฮุก
+_G.CrewSettings = {
+    ["OwnBoat"] = "XxArSkaysxX",
+    ["Method"] = "SanguineArt",
+    ['UseSkill'] = {
+        ['Z'] = true,
+        ['X'] = true,
+        ['C'] = true,
+        ['V'] = true
+    },
+    ["CrewMember"] = {}
 }
 
-script_key="BFTpXtLQqLWSlWPllEpymFLUzYCbrAkc";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/81574cc738de90c0ec2ee3ef084b45e1.lua"))()
+local function IsPlayerInList(name)
+    for _, playerName in pairs(_G.CrewSettings["CrewMember"]) do
+        if playerName == name then
+            return true
+        end
+    end
+    return false
+end
+
+function PlayerInsert()
+    for _, v in pairs(game:GetService("Players"):GetChildren()) do
+        if v:IsA("Player") then
+            if v.Name ~= _G.CrewSettings["OwnBoat"] then
+                if not IsPlayerInList(v.Name) then
+                    table.insert(_G.CrewSettings["CrewMember"], v.Name)
+                end
+            end
+        end
+    end
+end
+
+
+repeat task.wait() until #game:GetService("Players"):GetPlayers() >= 0
+
+PlayerInsert()
+
+if #_G.CrewSettings["CrewMember"] >= 0 then
+    print("Kondisi terpenuhi")
+    getgenv().Key = "MARU_NewM-TTC9XYLBAY6BAZ6"
+    getgenv().id = "823163528407547924"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/LoaderxP.lua"))()
+end
