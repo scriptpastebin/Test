@@ -31,7 +31,7 @@ getgenv().FpsCap = 30
             Enable = false,
             Races = {"Mink","Fishman","Human","Skypiea"}
         },
-       MinFragment = 20000, --Farm After Max Level
+       MinFragment = 10000, --Farm After Max Level
     }
 getgenv().Team = "Pirates"
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6defa760de515eaa9b060a2aee22fbb8.lua"))()
