@@ -9,7 +9,7 @@ _G.Setting = {
     ['Owner Beast Hunter'] = 'XxArSkaysxX' -- Write Name (ID Have Beast Hunter) / ใส่ชื่อไอดีที่มีเรือ Beast Hunter
 }
 _G.Webhook = {
-    ["Enabled"] = true, -- Enabled / เปิดใช้งาน
+    ["Enabled"] = false, -- Enabled / เปิดใช้งาน
     ["Url"] = "" -- Link Webhook discord / ลิ้งค์เว็บฮุก
 }
 
