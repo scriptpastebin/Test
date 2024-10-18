@@ -8,16 +8,16 @@ _G.CrewSettings = {
         ['V'] = true
     },
     ["CrewMember"] = {
-"trudotr727",
-"daveiwi521",
-"kaelden2069",
-"timeno421",
-"laursan071",
-"zelmani033",
-"ranssq466",
-"mabusti223",
-"sadath107",
-"aldrmo445"
+"reitpad2727",
+"snydeup979",
+"symmove8537",
+"trippwe959",
+"bonjcho150",
+"skelelin1586",
+"klicove5730",
+"schoscr8250",
+"deshpr917",
+"dechrej685"
     }
 }
 getgenv().Key = "MARU_NewM-TTC9XYLBAY6BAZ6"
