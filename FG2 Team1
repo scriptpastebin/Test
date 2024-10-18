@@ -10,13 +10,11 @@ _G.Settings_V4 = {
 "moripo724",
 "epicsm674",
 "fadecori8187",
-"spectam487",
 "arbitva344",
 "overdon181",
 "robepl229",
 "ponyrod479",
-"clovebr014",
-"hatlira020"
+"clovebr014"
     }
 }
 getgenv().Key = "MARU_V4-QAL7J6IUH01QH2L"
