@@ -1,41 +1,41 @@
 script_key = "ryYvIRXKAgsGxaVicJWUWEqbjaGZrGQC"
 getgenv().Team = "Pirates"
 getgenv().WebhookSetting = {
-    Enable = false,
+    Enable = true,
     Url = "",
     Embed = true,
     StoredFruit = true,
     ImageEmbed = true,
-    CustomImage = false,
-    CustomImageUrl = "", --Your Url
-    OnServerHop = true,
+    CustomImage = true,
+    CustomImageUrl = "https://i.imgur.com/wWxwPWE.png", --cf by eric
+    OnServerHop = false,
     BountyChanged = true,
 }
 getgenv().PlayerSetting = {
     SafeMode = true,
-    SafeModeHealth = {3000,75},--Number And %, Start Safe Mode And Stop Safe Mode
+    SafeModeHealth = {4300,40},--Number And %, Start Safe Mode And Stop Safe Mode
     UseRaceV3 = true,
-    SmartUseRaceV3 = true,
+    SmartUseRaceV3= true,
     DashIfV4 = true,
-    Dash = true,
-    IgnoreInCombat = true, --Turn This Off When Reseting Or Hop You Lost Bounty (Rare, Happens On Some Accounts)
-    ChatKillEnable = false,
-    Chat = {"Cf by MrBear","MrBear is one"},
-    IgnoreFriends = true, --Serverhop if you friend in your server
+    Dash= false,
+    IgnoreInCombat = true, --Turn This Off When Reseting Or Hop You Lost Bounty (Rare, Happens On Some Accounts) cf by eric
+    ChatKillEnable = true,
+    Chat = {"EricS1","gg"},
+    IgnoreFriends = false, --true neu muon co ban be vao no hop sv
 }
 getgenv().AttackSetting = {
     ForceMelee = true,
-    ForceMeleeTime = 3,
-    StopAttack = true, --When Meet Below Condition
-    StopAttackAtHealth = 80,--%
-    FastAttack = true, -- Toggle Fast Attack
+    ForceMeleeTime = 3.5,
+    StopAttack =true, --When Meet Below Condition
+    StopAttackAtHealth = 50,--%
+    FastAttack=true, -- Toggle Fast Attack
 }
 getgenv().UseSkillSetting = {
     -- Three Methods: "Normal", "Fast", "Spam", "SpamAll"
     MethodIfTargetOnV4 = "Fast",
     MethodIfPlayerOnV4 = "SpamAll",
-    MethodIfTargetUseFruit = {Fruits={Buddha,Portal},Method="Fast"},
-    NormalMethod = "Normal",
+    MethodIfTargetUseFruit = {Fruits={buddha},Method="Spam"},
+    NormalMethod = "Fast",
     LowHealthPlayerCondition = { --Player Can Attack Us, No Need For Slow Attack
         Enable = true,
         Health = 70,--%Health That Are Low
@@ -43,10 +43,10 @@ getgenv().UseSkillSetting = {
     },
     LowHealthTargetCondition = {
         Enable = true,
-        Health = 20, --%Health That Are Low
+        Health = 20,--%Health That Are Low
         DelayFirstTime = {true,2}, --1 Is Enable, 2 Is Second To Delay Before Attack Again
-        Method = "Normal",
-        WaitTime = 1.1, -- If Normal Method, Wait Every Skill If It Hits Target
+        Method = "Fast",
+        WaitTime = 0.5,-- If Normal Method, Wait Every Skill If It Hits Target
     }
 }
 getgenv().WeaponsSetting = {
@@ -57,48 +57,48 @@ getgenv().WeaponsSetting = {
         ["Skills"] = {
             ["Z"] = {
                 ["Enable"] = true,
-                ["NoPredict"] = false, -- For Dragon Tailon, Disable it 
-                ["HoldTime"] = 0.2,
-                ["TimeToNextSkill"] = 0.1,
+                ["NoPredict"] = true, -- For Dragon Tailon, Disable it 
+                ["HoldTime"] = 0.1,
+                ["TimeToNextSkill"] = 0, -- cf by eric
             },
         [ "X"] = {
                 ["Enable"] = true,
                 ["HoldTime"] = 0.2,
-                ["TimeToNextSkill"] = 0.1,
+                ["TimeToNextSkill"] = 0,
             },
 
             ["C"] = {
                 ["Enable"] = true,
-                ["HoldTime"] = 0.5,
-                ["TimeToNextSkill"] = 0.1,
+                ["HoldTime"] = 0.8,
+                ["TimeToNextSkill"] = 0,
             },
         },
     },
     ["Blox Fruit"] = {
         ["Enable"] = false,
-        ["Delay"] = 2,
-        ["SwitchNextWeaponIfCooldown"] = false,
+        ["Delay"] = 1,
+        ["SwitchNextWeaponIfCooldown"] = true,
         ["Skills"] = {
             ["Z"] = {
                 ["Enable"] = true,
-                ["HoldTime"] = 0.2,
-                ["TimeToNextSkill"] = 0.1,
+                ["HoldTime"] = 2,
+                ["TimeToNextSkill"] = 0,
             },
             ["X"] = {
                 ["Enable"] = true,
                 ["HoldTime"] = 0.2,
-                ["TimeToNextSkill"] = 0.1,
+                ["TimeToNextSkill"] = 0,
             },
 
             ["C"] = {
                 ["Enable"] = true,
-                ["HoldTime"] = 0.2,
-                ["TimeToNextSkill"] = 0.1,
+                ["HoldTime"] = 0.3,
+                ["TimeToNextSkill"] = 0,
             },
             ["V"] = {
                 ["Enable"] = true,
-                ["HoldTime"] = 0.1,
-                ["TimeToNextSkill"] = 0.1,
+                ["HoldTime"] = 0.2,
+                ["TimeToNextSkill"] = 0,
             },
             ["F"] = {
                 ["Enable"] = false,
@@ -109,16 +109,16 @@ getgenv().WeaponsSetting = {
     },
     ["Sword"] = {
         ["Enable"] = true,
-        ["Delay"] = 1.2,
+        ["Delay"] = 1.3,
         ["Skills"] = {
             ["Z"] = {
                 ["Enable"] = true,
-                ["HoldTime"] = 0.8,
+                ["HoldTime"] = 1.2,
                 ["TimeToNextSkill"] = 0,
             },
             ["X"] = {
                 ["Enable"] = true,
-                ["HoldTime"] = 0.2,
+                ["HoldTime"] = 0.5,
                 ["TimeToNextSkill"] = 0,
             },
         },
@@ -141,8 +141,8 @@ getgenv().WeaponsSetting = {
     },
 }
 getgenv().Theme = { -- getgenv().Theme = false if you want to disable
-    OldTheme = true,
-    Name="Miko", --"Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
+    OldTheme = false,
+    Name="Hutao", --"Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
     Custom={
             ["Enable"] = false,
             ['char_size'] = UDim2.new(0.668, 0, 1.158, 0),
