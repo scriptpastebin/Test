@@ -3,18 +3,18 @@ _G.Settings_V4 = {
     ["Lever"] = false, -- Auto Pull Lever
     ["InVIPServ"] = true, -- Crash when full moon end
     ["HelperNameList"] = { -- Put the helper account name
-        "cushma803",
-        "ungvrem9358"
+        "OENGQhyWaJt",
+        "zFleCVJpjfQ"
     },
     ["V4FarmList"] = { -- ตัวฟาร์มใส่ได้ 10 ตัวเผ่าไม่ซ้ำตัวช่วยพอ / Put account name u want to farm v4
-"fitzngr993",
-"prawlfa615",
-"sanjuch347",
-"seyosat4622",
-"brammoo3141",
-"lengun717",
-"nilgki336",
-"bannove0626"
+"sheerpr302",
+"vacanbe823",
+"mcquiov414",
+"zelcdr483",
+"mieraan376",
+"annuiry165",
+"godlfa852",
+"navaha308"
     }
 }
 getgenv().Key = "MARU_V4-QAL7J6IUH01QH2L"
