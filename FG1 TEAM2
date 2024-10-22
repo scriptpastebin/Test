@@ -3,7 +3,7 @@ _G.Settings_V4 = {
     ["Lever"] = false, -- Auto Pull Lever
     ["InVIPServ"] = true, -- Crash when full moon end
     ["HelperNameList"] = { -- Put the helper account name
-        "algerna125",
+        "cushma803",
         "ungvrem9358"
     },
     ["V4FarmList"] = { -- ตัวฟาร์มใส่ได้ 10 ตัวเผ่าไม่ซ้ำตัวช่วยพอ / Put account name u want to farm v4
