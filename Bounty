@@ -1,157 +1,97 @@
-script_key = "KLomTjFBmaseRYzBnAeVpBMVbIrhfKiG"
-getgenv().Team = "Pirates"
-getgenv().WebhookSetting = {
-    Enable = false,
-    Url = "",
-    Embed = true,
-    StoredFruit = true,
-    ImageEmbed = true,
-    CustomImage = false,
-    CustomImageUrl = "", --Your Url
-    OnServerHop = true,
-    BountyChanged = true,
-}
-getgenv().PlayerSetting = {
-    SafeMode = true,
-    SafeModeHealth = {3000,75},--Number And %, Start Safe Mode And Stop Safe Mode
-    UseRaceV3 = true,
-    SmartUseRaceV3 = true,
-    DashIfV4 = true,
-    Dash = true,
-    IgnoreInCombat = true, --Turn This Off When Reseting Or Hop You Lost Bounty (Rare, Happens On Some Accounts)
-    ChatKillEnable = false,
-    Chat = {"Cf by MrBear","MrBear is one"},
-    IgnoreFriends = true, --Serverhop if you friend in your server
-}
-getgenv().AttackSetting = {
-    ForceMelee = true,
-    ForceMeleeTime = 3,
-    StopAttack = true, --When Meet Below Condition
-    StopAttackAtHealth = 80,--%
-    FastAttack = true, -- Toggle Fast Attack
-}
-getgenv().UseSkillSetting = {
-    -- Three Methods: "Normal", "Fast", "Spam", "SpamAll"
-    MethodIfTargetOnV4 = "Fast",
-    MethodIfPlayerOnV4 = "SpamAll",
-    MethodIfTargetUseFruit = {Fruits={Buddha,Portal},Method="Fast"},
-    NormalMethod = "Normal",
-    LowHealthPlayerCondition = { --Player Can Attack Us, No Need For Slow Attack
-        Enable = true,
-        Health = 70,--%Health That Are Low
-        Method = "Fast",
+Setup = {
+    ['PC-er'] = false,
+    ['Team'] = 'Pirates',
+    ['Auto Team'] = {
+        ['Enabled'] = false,
+        ['Lock'] = {
+            ['Pirate'] = {0, 30000000},
+            ['Marines'] = {0, 30000000}
+        }
     },
-    LowHealthTargetCondition = {
-        Enable = true,
-        Health = 20, --%Health That Are Low
-        DelayFirstTime = {true,2}, --1 Is Enable, 2 Is Second To Delay Before Attack Again
-        Method = "Normal",
-        WaitTime = 1.1, -- If Normal Method, Wait Every Skill If It Hits Target
+    ['Panic % Health'] = {35, 55},
+    ['Chatting'] = {},
+    ['Lock Cam'] = false,
+    ['Hop Region'] = 'Singapore',
+    ['Random Y Tween'] = false,
+    ['Click Delay'] = 0.2
+}
+Hunter = {
+    ['Ignore'] = {
+        ['Fruit'] = {
+            'Meme-Meme'
+        },
+        ['Timer'] = 72,
+        ['V4'] = false
+    },
+    ['Gun Mode'] = false,
+    ['Predict Move'] = true,
+    ['Hit And Run'] = true,
+    ['Random Position'] = false
+}
+Booster = {
+    ['Hide Gui'] = false,
+    ['Showcase Mode'] = false,
+    ['White Screen'] = false,
+    ['Hide Map'] = false
+}
+Skills = {
+    ['Melee'] = {
+        ['Enabled'] = {true, true},
+        ['Z'] = {true, 0.1, 0.165},
+        ['X'] = {true, 0.3, 0.246},
+        ['C'] = {true, 0.5, 0.125}
+    },
+    ['Blox Fruit'] = {
+        ['Enabled'] = {false, false},
+        ['Z'] = {true, 1.325, 0.9},
+        ['X'] = {true, 0.6, 0.235},
+        ['C'] = {true, 0.2, 0.435},
+        ['V'] = {true, 0.3, 0.195},
+        ['F'] = {true, 0, 0.6}
+    },
+    ['Sword'] = {
+        ['Enabled'] = {true, true},
+        ['Z'] = {true, 0.5, 0.2},
+        ['X'] = {true, 0.3, 0.4},
+    },
+    ['Gun'] = {
+        ['Enabled'] = {false, false},
+        ['Z'] = {false, 0, 0},
+        ['X'] = {false, 0, 0},
     }
 }
-getgenv().WeaponsSetting = {
-    ["Melee"] = {
-        ["Enable"] = true,
-        ["Delay"] = 1, 
-        ["SwitchNextWeaponIfCooldown"] = true,
-        ["Skills"] = {
-            ["Z"] = {
-                ["Enable"] = true,
-                ["NoPredict"] = false, -- For Dragon Tailon, Disable it 
-                ["HoldTime"] = 0.2,
-                ["TimeToNextSkill"] = 0.1,
-            },
-        [ "X"] = {
-                ["Enable"] = true,
-                ["HoldTime"] = 0.2,
-                ["TimeToNextSkill"] = 0.1,
-            },
-
-            ["C"] = {
-                ["Enable"] = true,
-                ["HoldTime"] = 0.5,
-                ["TimeToNextSkill"] = 0.1,
-            },
-        },
+Macro = {
+    ['Enabled'] = true,
+    ['Skills'] = {
+        [1] = {'Melee', {'C', 'Z'}},
+        [2] = {'Blox Fruit', {'F','C'}},
+        [3] = {'Sword', {'X', 'Z'}},
+        [4] = {'Melee', {'X'}},
+        [5] = {'Gun', {'Z', 'V'}},
+        [6] = {'Blox Fruit', {'Z', 'F'}}
+    }
+}
+Counter = {
+    ['Enabled'] = true,
+    ['Webhook'] = {
+        ['Enabled'] = false,
+        ['Url'] = ''
     },
-    ["Blox Fruit"] = {
-        ["Enable"] = false,
-        ["Delay"] = 2,
-        ["SwitchNextWeaponIfCooldown"] = false,
-        ["Skills"] = {
-            ["Z"] = {
-                ["Enable"] = true,
-                ["HoldTime"] = 0.2,
-                ["TimeToNextSkill"] = 0.1,
-            },
-            ["X"] = {
-                ["Enable"] = true,
-                ["HoldTime"] = 0.2,
-                ["TimeToNextSkill"] = 0.1,
-            },
-
-            ["C"] = {
-                ["Enable"] = true,
-                ["HoldTime"] = 0.2,
-                ["TimeToNextSkill"] = 0.1,
-            },
-            ["V"] = {
-                ["Enable"] = true,
-                ["HoldTime"] = 0.1,
-                ["TimeToNextSkill"] = 0.1,
-            },
-            ["F"] = {
-                ["Enable"] = false,
-                ["HoldTime"] = 0,
-                ["TimeToNextSkill"] = 0,
-            },
-        },
-    },
-    ["Sword"] = {
-        ["Enable"] = true,
-        ["Delay"] = 1.2,
-        ["Skills"] = {
-            ["Z"] = {
-                ["Enable"] = true,
-                ["HoldTime"] = 0.8,
-                ["TimeToNextSkill"] = 0,
-            },
-            ["X"] = {
-                ["Enable"] = true,
-                ["HoldTime"] = 0.2,
-                ["TimeToNextSkill"] = 0,
-            },
-        },
-    },
-    ["Gun"] = {
-        ["Enable"] = false,
-        ["Delay"] = 0.5,
-        ["Skills"] = {
-            ["Z"] = {
-                ["Enable"] = false,
-                ["HoldTime"] = 0.1,
-                ["TimeToNextSkill"] = 0,
-            },
-            ["X"] = {
-                ["Enable"] = true,
-                ["HoldTime"] = 0.1,
-                ["TimeToNextSkill"] = 0,
-            },
-        },
+    ['Theme'] = {
+        ['Character'] = 'Yae',
+        ['Custom'] = {
+            ['Enabled'] = false,
+            ['Config'] = {
+                ['Background'] = '',
+                ['Character'] = '',
+                ['Icon'] = '',
+                ['Button Image'] = '',
+                ['Color'] = {
+                    ['Text'] = Color3.fromRGB(255, 255, 255),
+                    ['Stroke'] = Color3.fromRGB(255, 255, 255)
+                }
+            }
+        }
     },
 }
-getgenv().Theme = { -- getgenv().Theme = false if you want to disable
-    OldTheme = true,
-    Name="Miko", --"Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
-    Custom={
-            ["Enable"] = false,
-            ['char_size'] = UDim2.new(0.668, 0, 1.158, 0),
-            ['char_pos'] = UDim2.new(0.463, 0, -0.105, 0),
-            ['title_color'] = Color3.fromRGB(255, 221, 252),
-            ['titleback_color'] = Color3.fromRGB(169, 20, 255),
-            ['list_color'] = Color3.fromRGB(255, 221, 252),
-            ['liststroke_color'] = Color3.fromRGB(151, 123, 207),
-            ['button_color'] = Color3.fromRGB(255, 221, 252)
-       }
-}
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/248f97d7a28a4d09c641d8279a935333.lua"))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ErutTheTeru/ruahub/refs/heads/main/bounty-hunter.lua'))()
