@@ -28,8 +28,8 @@ getgenv().FpsCap = 30
         DisableCDK = false,
         DisableRaceEvolve = false,
          RollRace={
-            Enable = false,
-            Races = {"Mink","Fishman","Human","Skypiea"}
+            Enable = true,
+            Races = {"Mink","Fishman"}
         },
        MinFragment = 20000, --Farm After Max Level
     }
