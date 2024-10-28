@@ -5,14 +5,14 @@ _G.Setting = {
         ['Helper'] = "buendep1189", -- Helper / ผู้ช่วย
         ['Helper2'] = "starpit968", -- Helper2 / ผู้ช่วยคนที่ 2
         ['Farm'] = { -- Farming V4 / ตัวที่ต้องการทำ V4
-            "disobbla1382",
-            "devenly594",
-            "hallglo7982",
-            "vanvcr259",
-            "foolanda6206",
-            "sryglre849",
-            "clariluc8662",
-            "dureobs1326"
+"tabarpo040",
+"vikerur551",
+"pitifmu060",
+"handlth146",
+"grallhi187",
+"idlest891",
+"martre579",
+"ishlelk436"
         } 
     },
     -- Booster
