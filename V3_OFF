@@ -3,7 +3,7 @@ if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 _G.Setting = {
     ['Evo Race V3'] = true, -- Auto Evo Race V3 / ทำเผ่าวี 3
     ['Change Race'] = { -- Setting Change Race / ตั้งค่าไอดีที่ต้องการเปลี่ยนเผ่า
-        ['Mink'] = {"patiekap8829"},
+        ['Mink'] = {""},
         ['Human'] = {""},
         ['Skypiea'] = {""},
         ['Fishman'] = {""}
