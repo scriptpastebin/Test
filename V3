@@ -1,0 +1,16 @@
+if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
+
+_G.Setting = {
+    ['Evo Race V3'] = true, -- Auto Evo Race V3 / ทำเผ่าวี 3
+    ['Change Race'] = { -- Setting Change Race / ตั้งค่าไอดีที่ต้องการเปลี่ยนเผ่า
+        ['Mink'] = {"patiekap8829"},
+        ['Human'] = {""},
+        ['Skypiea'] = {""},
+        ['Fishman'] = {""}
+    },
+    -- Booster
+    ['White Screen'] = true, 
+    ['FPS Booster'] = true 
+}
+script_key="xrxpyIsEePaEBOoBvsWVasURDdmqUhDJ";
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2d1ebc6b47e1b9c4e34c97898f9b7c4b.lua"))()
