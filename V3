@@ -9,7 +9,7 @@ _G.Setting = {
         ['Fishman'] = {""}
     },
     -- Booster
-    ['White Screen'] = true, 
+    ['White Screen'] = false, 
     ['FPS Booster'] = true 
 }
 script_key="xrxpyIsEePaEBOoBvsWVasURDdmqUhDJ";
