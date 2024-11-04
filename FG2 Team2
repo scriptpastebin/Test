@@ -7,14 +7,14 @@ _G.Settings_V4 = {
         "YSUatnbGWoE"
     },
     ["V4FarmList"] = { -- ตัวฟาร์มใส่ได้ 10 ตัวเผ่าไม่ซ้ำตัวช่วยพอ / Put account name u want to farm v4
-"overhspa9074",
-"playnie057",
-"babagut753",
-"belksh009",
-"schuou232",
-"stinbro564",
-"violidec6397",
-"aflutsat8233"
+"confuzot1360",
+"mehdeld504",
+"amicabri7478",
+"denimvas9401",
+"unimplev8449",
+"jackkstr7082",
+"glassbac1648",
+"thrifdro8183"
     }
 }
 getgenv().Key = "MARU_V4-1P4SY1YUTFGDM8S"
