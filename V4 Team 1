@@ -1,12 +1,12 @@
 if not game:IsLoaded() then game.Loaded:Wait() end
 
 _G.Settings_V4 = {
-    ["LockTiers"] = 11,
+    ["LockTiers"] = 1,
     ["Lever"] = true,
     ["InVIPServ"] = true,
     ["HelperNameList"] = {
-        "",
-        ""
+        "coarma418",
+        "zitacl307"
     },
     ["V4FarmList"] = { }
 }
