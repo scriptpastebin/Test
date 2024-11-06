@@ -40,7 +40,7 @@ PlayerInsert()
 
 if #_G.CrewSettings["CrewMember"] >= 0 then
     print("Kondisi terpenuhi")
-    getgenv().Key = "MARU_NewM-TTC9XYLBAY6BAZ6"
+    getgenv().Key = "MARU_NewM-NFO9TJ3FYDV2DG5"
     getgenv().id = "823163528407547924"
     loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/LoaderxP.lua"))()
 end
