@@ -1,4 +1,4 @@
-script_key = "jkANhdexQmbHmwOYkLAWbegbavwyVorQ"
+script_key = ""
 getgenv().Team = "Pirates"
 getgenv().WebhookSetting = {
     Enable = false,
