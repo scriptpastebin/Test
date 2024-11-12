@@ -21,7 +21,7 @@ _G.Settings_Farm = {
     ["Amount_FPS"] = 30,
     ["LOCK_FPS"] = false,
     ["WhiteScreen"] = false,
-    ["Disabled_Gui"] = false,
+    ["Disabled_Gui"] = true,
 }
 _G.Quests_Settings = {
      ["V2Observation"] = false,
