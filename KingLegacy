@@ -24,10 +24,10 @@ _G.Settings_Farm = {
     ["Disabled_Gui"] = true,
 }
 _G.Quests_Settings = {
-     ["V2Observation"] = false,
-     ["V2Aramament"] = false,
-     ["V2DarkLeg"] = false,
-     ["FarmRaid"] = false
+     ["V2Observation"] = true,
+     ["V2Aramament"] = true,
+     ["V2DarkLeg"] = true,
+     ["FarmRaid"] = true
 }
 getgenv().Key = "MARU-ZI1XD-7C3W1-IAT1-UQVE7-ZX59M"
 getgenv().id = "823163528407547924"
