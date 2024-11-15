@@ -20,7 +20,7 @@ _G.Settings_Farm = {
     ["Enabled_FastFarm"] = true,
     ["Amount_FPS"] = 30,
     ["LOCK_FPS"] = false,
-    ["WhiteScreen"] = false,
+    ["WhiteScreen"] = true,
     ["Disabled_Gui"] = true,
 }
 _G.Quests_Settings = {
