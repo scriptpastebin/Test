@@ -1,6 +1,6 @@
 script_key="fAvmCiDudRELhfVGuuIiXCwtrkERhRaT";
 
-getgenv().beta = true
+getgenv().beta = true,
 
 getgenv().autoFarmValue = true,
 getgenv().alwaysRojod = true,
