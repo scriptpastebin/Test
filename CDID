@@ -1,13 +1,13 @@
 script_key="fAvmCiDudRELhfVGuuIiXCwtrkERhRaT";
 
-getgenv().beta = true,
+getgenv().beta = true
 
-getgenv().autoFarmValue = true,
-getgenv().alwaysRojod = true,
-getgenv().pingBased = true,
+getgenv().autoFarmValue = true
+getgenv().alwaysRojod = true
+getgenv().pingBased = true
 
-getgenv().timeToTeleports = 35,
-getgenv().timeToShad = 01,
-getgenv().timeToRecall = 01,
+getgenv().timeToTeleports = 35
+getgenv().timeToShad = 01
+getgenv().timeToRecall = 01
 
 loadstring(game:HttpGet("https://getsades.net"))()
