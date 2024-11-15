@@ -16,6 +16,10 @@ script_key="xrxpyIsEePaEBOoBvsWVasURDdmqUhDJ";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2d1ebc6b47e1b9c4e34c97898f9b7c4b.lua"))()
 
 
+CDID
+script_key="fAvmCiDudRELhfVGuuIiXCwtrkERhRaT";
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/db9e747b1e6bee9c5469526d1d759c1c.lua"))()
+
 
 getgenv().Script_Mode = "Kaitun_Script"
 _G.Settings_Farm = {
