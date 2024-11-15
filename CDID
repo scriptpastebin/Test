@@ -1,13 +1,26 @@
 script_key="fAvmCiDudRELhfVGuuIiXCwtrkERhRaT";
 
-getgenv().beta = true
+--// BETA AUTOSET OPTIONS \\--
+getgenv().beta = true -- If u want to use beta version set to true, if not set to false
 
-getgenv().autoFarmValue = true
-getgenv().alwaysRojod = true
-getgenv().pingBased = true
+getgenv().autoFarmValue = true -- Start Autofarm
+-- getgenv().minigamesValue = true -- Start Minigames
 
-getgenv().timeToTeleports = 35
-getgenv().timeToShad = 01
-getgenv().timeToRecall = 01
+getgenv().alwaysRojod = true -- Always Rojod Value
+getgenv().pingBased = true -- Ping Based Value
+-- getgenv().earningTargeter = true -- Earning Targeter Value
+
+getgenv().timeToTeleports = 40
+getgenv().timeToShad = 10
+getgenv().timeToRecall = 10 
+-- getgenv().targetMoney = 1000000000 ( Target Money Value )
+
+-- getgenv().webhookUrl = "https://discord.com/api/webhooks/1234567890/abcdefghijklmnopqrstuvwxyz" -- Webhook URL
+-- getgenv().spoofNickname = true -- Spoof Nickname
+
+-- getgenv().minigamesAccountType = "lose Account" -- Minigames Account Type {"Lose Account", "Win Account"}
+-- getgenv().minigamesVehicleSelect = "2021Avanza15CVT" -- Minigames Vehicle Select
+-- getgenv().minigamesWaitTime = 20 -- Minigames Wait Time
+
 
 loadstring(game:HttpGet("https://getsades.net"))()
