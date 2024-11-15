@@ -1,2 +1,26 @@
 script_key="fAvmCiDudRELhfVGuuIiXCwtrkERhRaT";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/db9e747b1e6bee9c5469526d1d759c1c.lua"))()
+
+--// BETA AUTOSET OPTIONS \\--
+getgenv().beta = true -- If u want to use beta version set to true, if not set to false
+
+getgenv().autoFarmValue = true -- Start Autofarm
+-- getgenv().minigamesValue = true -- Start Minigames
+
+getgenv().alwaysRojod = true -- Always Rojod Value
+getgenv().pingBased = true -- Ping Based Value
+-- getgenv().earningTargeter = true -- Earning Targeter Value
+
+getgenv().timeToTeleports = 35
+getgenv().timeToShad = 0.1
+getgenv().timeToRecall = 0.1 
+-- getgenv().targetMoney = 10000000000 ( Target Money Value )
+
+-- getgenv().webhookUrl = "https://discord.com/api/webhooks/1234567890/abcdefghijklmnopqrstuvwxyz" -- Webhook URL
+-- getgenv().spoofNickname = true -- Spoof Nickname
+
+-- getgenv().minigamesAccountType = "lose Account" -- Minigames Account Type {"Lose Account", "Win Account"}
+-- getgenv().minigamesVehicleSelect = "2021Avanza15CVT" -- Minigames Vehicle Select
+-- getgenv().minigamesWaitTime = 20 -- Minigames Wait Time
+
+
+loadstring(game:HttpGet("https://getsades.net"))()
