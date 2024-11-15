@@ -15,7 +15,7 @@ getgenv().timeToShad = 0.1
 getgenv().timeToRecall = 0.1 
 -- getgenv().targetMoney = 10000000000 ( Target Money Value )
 
--- getgenv().webhookUrl = "https://discord.com/api/webhooks/1234567890/abcdefghijklmnopqrstuvwxyz" -- Webhook URL
+getgenv().webhookUrl = "https://discord.com/api/webhooks/1307006613999194268/-yJQ3V5DEGdPR3JPykDzpswMJ9JriobUWLDFgkHb6WfsSlKpWvCn5AupnID8iUrJb-m6" -- Webhook URL
 -- getgenv().spoofNickname = true -- Spoof Nickname
 
 -- getgenv().minigamesAccountType = "lose Account" -- Minigames Account Type {"Lose Account", "Win Account"}
