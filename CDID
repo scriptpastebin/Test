@@ -1,7 +1,7 @@
 script_key="fAvmCiDudRELhfVGuuIiXCwtrkERhRaT";
 
 --// BETA AUTOSET OPTIONS \\--
-getgenv().beta = true -- If u want to use beta version set to true, if not set to false
+getgenv().beta = false -- If u want to use beta version set to true, if not set to false
 
 getgenv().autoFarmValue = true -- Start Autofarm
 -- getgenv().minigamesValue = true -- Start Minigames
