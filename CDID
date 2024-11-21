@@ -1,7 +1,7 @@
 script_key="fAvmCiDudRELhfVGuuIiXCwtrkERhRaT";
 
 --// BETA AUTOSET OPTIONS \\--
-getgenv().beta = false -- If u want to use beta version set to true, if not set to false
+getgenv().beta = true -- If u want to use beta version set to true, if not set to false
 
 getgenv().autoFarmValue = true -- Start Autofarm
 -- getgenv().minigamesValue = true -- Start Minigames
@@ -10,9 +10,9 @@ getgenv().alwaysRojod = true -- Always Rojod Value
 getgenv().pingBased = true -- Ping Based Value
 -- getgenv().earningTargeter = true -- Earning Targeter Value
 
-getgenv().timeToTeleports = 40
-getgenv().timeToShad = 10
-getgenv().timeToRecall = 10 
+getgenv().timeToTeleports = 35
+getgenv().timeToShad = 0.1
+getgenv().timeToRecall = 0.1 
 -- getgenv().targetMoney = 1000000000 ( Target Money Value )
 
 -- getgenv().webhookUrl = "https://discord.com/api/webhooks/1234567890/abcdefghijklmnopqrstuvwxyz" -- Webhook URL
