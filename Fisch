@@ -20,7 +20,7 @@ _G.Settings = {
     ["FpsBoost"] = true,
     ["Black_Screen"] = true
 }
-getgenv().Key = "MARU-IXFFI-8E670-JKC9-HDK15-K4RV7"
+getgenv().Key = "MARU-B3CLE-AT6EL-0O82-EGWPQ-CITA9"
 getgenv().id = "823163528407547924"
 getgenv().Script_Mode = "Kaitun_Script"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
