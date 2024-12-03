@@ -1,20 +1,23 @@
 _G.Settings = {
     ["AfkCheckTime"] = 300, -- Seconds
-    ["AutoFishing"] = true,
+    ["EquipRod"] = "Auto", -- Trident Rod, Destiny Rod,... Rod
     ["SellFish"] = {
+        ["SellDelay"] = 100, -- Seconds
         ["Enable"] = true,
         ["Method"] = {
             ["Event"] = true,
             ["Enchant"] = true,
             ["Mythical"] = true,
-            ["Legendary"] = true
+            ["Legendary"] = true,
+            ["Exotic"] = true
         }
     },
-    ['MakeRod'] = {'Aurora Rod', 'Trident Rod'},
+    ['Rod'] = {
+        ['Trident Rod'] = true,
+        ['Destiny Rod'] = true
+    },
     ['MethodShake'] = "Fast", -- Fast, Fix bug
-    ["Instant_Coin"] = true,
-    ["SetSteek"] = 100,
-    ["FpsBoost"] = false,
+    ["FpsBoost"] = true,
     ["Black_Screen"] = true
 }
 getgenv().Key = "MARU-IXFFI-8E670-JKC9-HDK15-K4RV7"
