@@ -2,8 +2,8 @@ if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 getgenv().Setting = {
     -- Choose the hook you want.
     ['Trident Rod'] = true,
-    ['No Life Rod'] = true,
-    ['Sunken Rod'] = true,
+    ['No Life Rod'] = false,
+    ['Sunken Rod'] = false,
     ['Rod Of The Depths'] = false,
     -- Additional functions
     ['FPS Booster'] = true, -- rubbish picture
