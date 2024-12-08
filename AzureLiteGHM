@@ -1,4 +1,4 @@
-script_key = "VRthkyIAcsbTtmaZpHpbZqFIyOqOONpm"
+script_key = "zieTRYmVIJlgBwGcZPIQOIiBERgGziMC"
 getgenv().SetFpsCap = false 
 getgenv().FpsCap = 30
     getgenv().UiCheckItems = true
@@ -11,11 +11,11 @@ getgenv().FpsCap = 30
         RedeemCode=true,
         Sea2KeyHop=true,
         FruitEat = { --Priority, Name, 
-            [1] = {"Dough-Dough","Ice-Ice","Magma-Magma","Flame-Flame",},
+            [1] = {"Ice-Ice","Magma-Magma","Flame-Flame",},
             [2] = {}
         },
         EatFruitFromStorage = false,
-        SnipeFruit = false,
+        SnipeFruit = true,
         SnipeFruitMirage = false,
         HopIfFoundNearExploiter = true,
         HopHakiColor = false,
@@ -24,13 +24,8 @@ getgenv().FpsCap = 30
         HopMirrorFractal = false,
         FarmPole = false, -- Turn off If Want Focus Level
         FarmItems = false, --Turn off If Want Focus Level And CDK, THis Only get After You Get God Human
-        DisableSoulGuitar = false,
+        DisableSoulGuitar = true,
         DisableCDK = true,
-        DisableRaceEvolve = false,
-         RollRace={
-            Enable = true,
-            Races = {"Mink","Fishman","Skypiea"}
-        },
        MinFragment = 20000, --Farm After Max Level
     }
 getgenv().Team = "Pirates"
