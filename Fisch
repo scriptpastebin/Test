@@ -4,7 +4,7 @@ getgenv().Setting = {
     ['Trident Rod'] = true,
     ['No Life Rod'] = false,
     ['Sunken Rod'] = true,
-    ['Rod Of The Depths'] = false,
+    ['Rod Of The Depths'] = true,
     -- Additional functions
     ['FPS Booster'] = true, -- rubbish picture
     ['Disibled Gui'] = false, -- Close Gui page.
