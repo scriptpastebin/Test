@@ -1,87 +1,44 @@
-getgenv().Config = {
-    ["Inventory"] = {
-        ["Auto Sell"] = {
-            ["Enable"] = true,
-            ["Rarity"] = {
-                ["Legendary"] = true,
-                ["Mythical"] = true
-            },
-            ["Delay"] = 5
-        }
-    },
-    ["AutoSave"] = true,
-    ["Auto Equip Rod"] = {
-        ["Enable"] = true,
-        ["Prioritize"] = {
-            ["Rod Of The Depths"] = 5,
-            ["Sunken Rod"] = 4,
-            ["Aurora Rod"] = 2,
-            ["Trident Rod"] = 3,
-            ["Steady Rod"] = 1
-        }
-    },
-    ["Auto Quest"] = {
-        ["Auto Trident Rod"] = {
-            ["Enable"] = true
+-- ⚠️ ห้ามลบ _G. ไม่งั้นจะรันไม่ขึ้น⚠️
+Config = {
+        ['Lock Fps'] = 120,
+        ['Farm Fish'] = true,
+        ['Auto Sell'] = true,
+        ['Check Functions'] = nil, -- DONT EDIT IT
+        ['Save Functions'] = nil, -- DONT EDIT IT
+        ['Tp Functions'] = nil, -- DONT EDIT IT
+        ['Camera Functions'] = nil, -- DONT EDIT IT
+        ["Fully Rod Of The Depth"] = true,
+        ["Fishing"] = {
+            ["Pull Delay"] = 0.2,
+            ["Cast Delay"] = 0,
         },
-        ["Auto Rod Of The Depths"] = {
-			["Enable"] = true
-		}
-    },
-    ["Auto Bait"] = {
-        ["Bait Crate"] = "Bait Crate",
-        ["Equip Random"] = true,
-        ["Infinite Bait"] = true,
-        ["Buy"] = true
-    },
-    ["Character"] = {
-        ["Disable Swim"] = true
-    },
-    ["Auto Buy Rod"] = {
-        ["Enable"] = true,
-        ["Rod"] = "Steady Rod"
-    },
-    ["Performance"] = {
-        ["Fullbright"] = true,
-        ["Boost FPS"] = true
-    },
-    ["Auto Treasure Map"] = true,
-    ["Performance Failsafe"] = {
-        ["Rejoin Timer"] = {
-            ["Minute"] = 60
-        }
-    },
-    ["Auto Fish"] = {
-        ["Enable"] = true,
-        ["Fish Location"] = {
-            ["Height"] = 0,
-            ["Auto"] = true,
-            ["Zone"] = "The Depths"
+        ["Keep Fish"] = {
+            ["Exotic"] = true,
+            ["Mythical"] = true,
+            ["Legendary"] = false,
+            ["Event"] = true
         },
-        ["Cast Threshold"] = 95,
-        ["Perfect Chance"] = 50,
-        ["Fail Chance"] = 5
-    },
-    ["Auto Aurora Totem"] = {
-        ["Buy Aurora Rod"] = true
-    },
-    ["Auto Enchant Rod"] = {
-        ["Enable"] = true,
-        ["Rod"] = {
-            ["Aurora Rod"] = true,
-            ["Trident Rod"] = true,
-            ["Sunken Rod"] = true
+        ["Reduce"] = {
+            ['White Screen'] = false,
+            ['Black Screen'] = false,
         },
-        ["Enchant"] = {
-            ["Lucky"] = true,
-            ["Divine"] = true,
-            ["Swift"] = true,
-            ["Steady"] = true,
-            ["Quality"] = true,
-            ["Hasty"] = true
+        ["Enchant Lock"] = {
+            ["Allow Enchant"] = true,
+            ["Trident Rod"] = "Hasty",    
         },
-        ["Use Sundial if Day"] = true
+        ["Custom"] = {
+            ["Custom Use Rod"] = nil,
+            ["Custom Bait"] = "Rapid Catcher",
+        },
+        ["WebHook"] = {
+            ["Link"] = '',
+            ["Discord Id"] = '',
+            ["Delay Sending"] = 5, 
+            ["Auto Sending"] = false,
+            ["Ping With Discord Id"] = false,
+        },
     }
-}
-getgenv().Key = "k3d6cf304421330ebdc122c6"
-loadstring(game:HttpGet("https://nousigi.com/loader.lua"))() 
+_G.Key = 'ALL-XCMVO-42KFS'
+_G.DiscordId  = '823163528407547924'
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkiTeam/Nomal-Project/refs/heads/main/FischKaitun'))(); 
