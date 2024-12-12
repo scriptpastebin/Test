@@ -27,7 +27,7 @@ Config = {
             ["Rod Of The Depth"] = "Hasty",    
         },
         ["Custom"] = {
-            ["Custom Use Rod"] = nil,
+            ["Custom Use Rod"] = "Rod Of The Depth",
             ["Custom Bait"] = "Rapid Catcher",
         },
         ["WebHook"] = {
