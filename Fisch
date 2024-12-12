@@ -38,7 +38,7 @@ Config = {
             ["Ping With Discord Id"] = false,
         },
     }
-_G.Key = 'ALL-XCMVO-42KFS'
+_G.Key = 'ALL-ZHXL9-QKM43'
 _G.DiscordId  = '823163528407547924'
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkiTeam/Nomal-Project/refs/heads/main/FischKaitun'))(); 
