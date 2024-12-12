@@ -70,7 +70,8 @@ getgenv().Config = {
         ["Rod"] = {
             ["Aurora Rod"] = false,
             ["Trident Rod"] = false,
-            ["Sunken Rod"] = false
+            ["Sunken Rod"] = false,
+            ["Rod Of The Depths"] = true,
         },
         ["Enchant"] = {
             ["Lucky"] = false,
