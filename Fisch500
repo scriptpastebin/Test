@@ -1,15 +1,88 @@
-if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
-getgenv().Setting = {
-    -- Choose the hook you want.
-    ['Trident Rod'] = true,
-    ['No Life Rod'] = true,
-    ['Sunken Rod'] = true,
-    ['Rod Of The Depths'] = true,
-    -- Additional functions
-    ['FPS Booster'] = true, -- rubbish picture
-    ['Disibled Gui'] = false, -- Close Gui page.
-    ['Faster Farm Level 500'] = true --This function will work when you get the Trident Rod and will go to farm islands that have a lot of level.
+getgenv().Config = {
+    ["Inventory"] = {
+        ["Auto Sell"] = {
+            ["Enable"] = true,
+            ["Rarity"] = {
+                ["Legendary"] = true,
+                ["Mythical"] = true
+            },
+            ["Delay"] = 5
+        }
+    },
+    ["AutoSave"] = true,
+    ["Auto Equip Rod"] = {
+        ["Enable"] = true,
+        ["Prioritize"] = {
+            ["Rod Of The Depths"] = 5,
+            ["Sunken Rod"] = 2,
+            ["Aurora Rod"] = 4,
+            ["Trident Rod"] = 3,
+            ["Steady Rod"] = 1
+        }
+    },
+    ["Auto Quest"] = {
+        ["Auto Trident Rod"] = {
+            ["Enable"] = true
+        },
+        ["Auto Rod Of The Depths"] = {
+            ["Enable"] = true
+        }
+    },
+    ["Auto Bait"] = {
+        ["Bait Crate"] = "Bait Crate",
+        ["Equip Random"] = true,
+        ["Infinite Bait"] = true,
+        ["Buy"] = true
+    },
+    ["Character"] = {
+        ["Disable Swim"] = true
+    },
+    ["Auto Buy Rod"] = {
+        ["Enable"] = true,
+        ["Rod"] = "Steady Rod"
+    },
+    ["Performance"] = {
+        ["Fullbright"] = true,
+        ["Boost FPS"] = true
+    },
+    ["Auto Treasure Map"] = true,
+    ["Performance Failsafe"] = {
+        ["Rejoin Timer"] = {
+            ["Minute"] = 60
+        }
+    },
+    ["Auto Fish"] = {
+        ["Enable"] = true,
+        ["Fish Location"] = {
+            ["Height"] = 0,
+            ["Auto"] = true,
+            ["Zone"] = "The Depths"
+        },
+        ["Cast Threshold"] = 95,
+        ["Perfect Chance"] = 50,
+        ["Fail Chance"] = 5
+    },
+    ["Auto Aurora Totem"] = {
+        ["Buy Aurora Rod"] = true
+    },
+    ["Auto Enchant Rod"] = {
+        ["Enable"] = true,
+        ["Rod"] = {
+            ["Aurora Rod"] = false,
+            ["Trident Rod"] = false,
+            ["Sunken Rod"] = false,
+            ["Rod Of The Depths"] = true,
+        },
+        ["Enchant"] = {
+            ["Lucky"] = false,
+            ["Divine"] = false,
+            ["Swift"] = false,
+            ["Steady"] = false,
+            ["Quality"] = false,
+            ["Hasty"] = true
+        },
+        ["Use Sundial if Day"] = true
+    }
 }
-getgenv().Mode = 'Kaitun'
-script_key="QPKzQJxaYoTBHSyzVOZbAYajPWlExKIY";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/dfec52493db2cbed3488e938e296c3ab.lua"))()
+getgenv().Key = "k3d6cf304421330ebdc122c6"
+loadstring(game:HttpGet("https://nousigi.com/loader.lua"))() 
