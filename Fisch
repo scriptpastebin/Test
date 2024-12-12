@@ -68,9 +68,9 @@ getgenv().Config = {
     ["Auto Enchant Rod"] = {
         ["Enable"] = true,
         ["Rod"] = {
-            ["Aurora Rod"] = true,
-            ["Trident Rod"] = true,
-            ["Sunken Rod"] = true
+            ["Aurora Rod"] = false,
+            ["Trident Rod"] = false,
+            ["Sunken Rod"] = false
         },
         ["Enchant"] = {
             ["Lucky"] = false,
