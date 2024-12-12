@@ -1,15 +1,44 @@
-if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
-getgenv().Setting = {
-    -- Choose the hook you want.
-    ['Trident Rod'] = true,
-    ['No Life Rod'] = false,
-    ['Sunken Rod'] = true,
-    ['Rod Of The Depths'] = true,
-    -- Additional functions
-    ['FPS Booster'] = true, -- rubbish picture
-    ['Disibled Gui'] = false, -- Close Gui page.
-    ['Faster Farm Level 500'] = true --This function will work when you get the Trident Rod and will go to farm islands that have a lot of level.
-}
-getgenv().Mode = 'Kaitun'
-script_key="QPKzQJxaYoTBHSyzVOZbAYajPWlExKIY";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/dfec52493db2cbed3488e938e296c3ab.lua"))()
+-- ⚠️ ห้ามลบ _G. ไม่งั้นจะรันไม่ขึ้น⚠️
+Config = {
+        ['Lock Fps'] = 120,
+        ['Farm Fish'] = true,
+        ['Auto Sell'] = true,
+        ['Check Functions'] = nil, -- DONT EDIT IT
+        ['Save Functions'] = nil, -- DONT EDIT IT
+        ['Tp Functions'] = nil, -- DONT EDIT IT
+        ['Camera Functions'] = nil, -- DONT EDIT IT
+        ["Fully Rod Of The Depth"] = true,
+        ["Fishing"] = {
+            ["Pull Delay"] = 0.2,
+            ["Cast Delay"] = 0,
+        },
+        ["Keep Fish"] = {
+            ["Exotic"] = true,
+            ["Mythical"] = true,
+            ["Legendary"] = false,
+            ["Event"] = true
+        },
+        ["Reduce"] = {
+            ['White Screen'] = false,
+            ['Black Screen'] = false,
+        },
+        ["Enchant Lock"] = {
+            ["Allow Enchant"] = true,
+            ["Trident Rod"] = "Hasty",    
+        },
+        ["Custom"] = {
+            ["Custom Use Rod"] = nil,
+            ["Custom Bait"] = "Rapid Catcher",
+        },
+        ["WebHook"] = {
+            ["Link"] = '',
+            ["Discord Id"] = '',
+            ["Delay Sending"] = 5, 
+            ["Auto Sending"] = false,
+            ["Ping With Discord Id"] = false,
+        },
+    }
+_G.Key = 'ALL-XCMVO-42KFS'
+_G.DiscordId  = '823163528407547924'
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkiTeam/Nomal-Project/refs/heads/main/FischKaitun'))(); 
