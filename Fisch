@@ -24,7 +24,7 @@ Config = {
         },
         ["Enchant Lock"] = {
             ["Allow Enchant"] = true,
-            ["Trident Rod"] = "Hasty",    
+            ["Rod Of The Depth"] = "Hasty",    
         },
         ["Custom"] = {
             ["Custom Use Rod"] = nil,
