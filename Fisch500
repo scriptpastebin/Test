@@ -13,9 +13,10 @@ getgenv().Config = {
     ["Auto Equip Rod"] = {
         ["Enable"] = true,
         ["Prioritize"] = {
+            ["No-Life Rod"] = 6,
             ["Rod Of The Depths"] = 5,
-            ["Sunken Rod"] = 2,
-            ["Aurora Rod"] = 4,
+            ["Sunken Rod"] = 4,
+            ["Aurora Rod"] = 2,
             ["Trident Rod"] = 3,
             ["Steady Rod"] = 1
         }
