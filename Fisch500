@@ -13,11 +13,10 @@ getgenv().Config = {
     ["Auto Equip Rod"] = {
         ["Enable"] = true,
         ["Prioritize"] = {
-            ["No-Life Rod"] = 6,
-            ["Rod Of The Depths"] = 5,
-            ["Sunken Rod"] = 4,
-            ["Trident Rod"] = 3,
-            ["Aurora Rod"] = 2,
+            ["No-Life Rod"] = 5,
+            ["Rod Of The Depths"] = 4,
+            ["Sunken Rod"] = 3,
+            ["Trident Rod"] = 2,
             ["Steady Rod"] = 1
         }
     },
@@ -78,9 +77,6 @@ getgenv().Config = {
     ["Auto Enchant Rod"] = {
         ["Enable"] = true,
         ["Rod"] = {
-            ["Aurora Rod"] = false,
-            ["Trident Rod"] = false,
-            ["Sunken Rod"] = false,
             ["Rod Of The Depths"] = true
         },
         ["Enchant"] = {
