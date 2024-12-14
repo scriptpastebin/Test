@@ -79,7 +79,7 @@ getgenv().SettingFarm = {
     }, 
     ["Auto Bait"] = {
         ["Buy Bait"] = true,
-        ["Amount Buy Bait"] = 10,
+        ["Amount Buy Bait"] = 25,
         ["Use Bait Random"] = false,
         ["Select Bait"] = {
             ["Enabled"] = true,
