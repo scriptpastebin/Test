@@ -23,10 +23,19 @@ getgenv().Config = {
     },
     ["Auto Quest"] = {
         ["Auto Trident Rod"] = {
-            ["Enable"] = true
+            ["Enable"] = true,
+            ["Crab Cage Hop Server"] = true
         },
         ["Auto Rod Of The Depths"] = {
-            ["Enable"] = true
+			["Enable"] = true,
+            ["Crab Cage Hop Server"] = true
+		},
+        ["Auto No-Life Rod"] = {
+            ["Enable"] = true,
+            ["Auto Aurora Totem"] = true
+        },
+        ["Auto Rod Of The Forgotten Fang"] = {
+            ["Enable"] = false
         }
     },
     ["Auto Bait"] = {
@@ -60,8 +69,8 @@ getgenv().Config = {
             ["Zone"] = "The Depths"
         },
         ["Cast Threshold"] = 95,
-        ["Perfect Chance"] = 95,
-        ["Fail Chance"] = 2
+        ["Perfect Chance"] = 50,
+        ["Fail Chance"] = 5
     },
     ["Auto Aurora Totem"] = {
         ["Buy Aurora Rod"] = true
