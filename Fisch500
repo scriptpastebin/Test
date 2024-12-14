@@ -51,7 +51,7 @@ getgenv().SettingFarm = {
         ["Rod Of The Forgotten Fang"] = 7,
     },
     ["Get Rod"] = { --- Trident Rod and Rod of the depth it will auto get dont need config
-        ["Rod of The Forgotten Fang"] = true,
+        ["Rod of The Forgotten Fang"] = false,
         ["Aurora Rod"] = {
             ["Enabled"] = true,
             ["Auto Buy Aurora Totem"] = true --- if have  rod of the depth it will buy
