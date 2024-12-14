@@ -60,8 +60,8 @@ getgenv().Config = {
             ["Zone"] = "The Depths"
         },
         ["Cast Threshold"] = 95,
-        ["Perfect Chance"] = 50,
-        ["Fail Chance"] = 5
+        ["Perfect Chance"] = 95,
+        ["Fail Chance"] = 2
     },
     ["Auto Aurora Totem"] = {
         ["Buy Aurora Rod"] = true
