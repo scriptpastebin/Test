@@ -51,7 +51,7 @@ getgenv().SettingFarm = {
         ["Rod Of The Forgotten Fang"] = 7,
     },
     ["Get Rod"] = { --- Trident Rod and Rod of the depth it will auto get dont need config
-        ["Rod of The Forgotten Fang"] = true,
+        ["Rod of The Forgotten Fang"] = false,
         ["Aurora Rod"] = {
             ["Enabled"] = true,
             ["Auto Buy Aurora Totem"] = true --- if have  rod of the depth it will buy
@@ -71,7 +71,7 @@ getgenv().SettingFarm = {
     ["Auto Enchant"] = { -- have rod of the depths
         ["Enabled"] = true,
         ["Name Rod"] = "Rod Of The Depths",
-        ["Enchant"] = {"Clever"}, 
+        ["Enchant"] = {"Hasty"}, 
         ["Auto Buy Relic"] = {
             ["Enabled"] = true, 
             ["Amount"] = 10
@@ -83,7 +83,7 @@ getgenv().SettingFarm = {
         ["Use Bait Random"] = false,
         ["Select Bait"] = {
             ["Enabled"] = true,
-            ["Bait"]  = "Rapid Catcher",
+            ["Bait"]  = "Night Shrimp",
         }
     },
     ["Rejoin"] = {
