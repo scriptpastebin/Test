@@ -1,102 +1,98 @@
-repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
-getgenv().Key = "9c3329abb8b3f1872d7ca524"
-getgenv().SettingFarm = {
-    ["Hide UI"] = false,
-    ["White Screen"] = false,
-    ["Auto Sell"] = {
-        ["Enabled"] = true,
-        ["Rarity"] = {
-            Legendary = true,
-            Mythical = true, 
-            Exotic = true,
-            Limited = true,
-            Divine = true,
-            Relic = true,
-        }
-    },
-    ["Webhook"] = {
-        ["Fish Catched"] = {
-            ["Enable"] = false,
-            ["Minimum Weight"] = 1000,
+getgenv().Config = {
+    ["Inventory"] = {
+        ["Auto Sell"] = {
+            ["Enable"] = true,
             ["Rarity"] = {
-                ["Mythical"] = true,
-                ["Exotic"] = true,
-                ["Divine"] = true,
-                ["Relic"] = true,
-                ["Limited"] = true
-            }
-        },
-        ["URL"] = ""
-    },
-    ["Auto Buy Luck"] = true, -- have trident rod
-    ["Get Rod"] = { --- Trident Rod and Rod of the depth it will auto get dont need config
-        ["Aurora Rod"] = {
-            ["Enabled"] = true,
-            ["Auto Buy Aurora Totem"] = true --- if have  rod of the depth it will buy
-        },
-        ["Sunken Rod"] = true,
-
-    },
-        ["Set CFrame"] = { -- if have Rod Of the depths then will work
-        ["Enabled"] = true,
-        ["CFrame"] = CFrame.new(5802.84424, 135.301468, 403.946533, 0.991938531, -1.18916499e-09, -0.126719773, -8.93702778e-10, 1, -1.63799463e-08, 0.126719773, 1.63611507e-08, 0.991938531)
-    },
-    ["Auto Equip Rod"] = {
-        ["Rapid Rod"] = 1,
-        ["Aurora Rod"] = 2,
-        ["Trident Rod"] = 3,
-        ["Sunken Rod"] = 4,
-        ["Rod Of The Depths"] = 5,
-        ["No-Life Rod"] = 6,
-        ["Rod Of The Forgotten Fang"] = 7,
-    },
-    ["Get Rod"] = { --- Trident Rod and Rod of the depth it will auto get dont need config
-        ["Rod of The Forgotten Fang"] = false,
-        ["Aurora Rod"] = {
-            ["Enabled"] = true,
-            ["Auto Buy Aurora Totem"] = true --- if have  rod of the depth it will buy
-        },
-        ["Sunken Rod"] = true,
-    },
-    ["Auto Buy Luck"] = true, -- have trident rod
-    ["Event"] = {
-        ["Megalodon"] = {  --- have rod of the depth
-            ["Enabled"] = false,
-            ["Prioritize Rod"] = {
-                ["Enabled"] = false,
-                ["Name Rod"] = "No-Life Rod"
+                ["Legendary"] = true,
+                ["Mythical"] = true
             },
+            ["Delay"] = 5
         }
     },
-    ["Auto Enchant"] = { -- have rod of the depths
-        ["Enabled"] = true,
-        ["Name Rod"] = "Rod Of The Depths",
-        ["Enchant"] = {"Hasty"}, 
-        ["Auto Buy Relic"] = {
-            ["Enabled"] = true, 
-            ["Amount"] = 10
+    ["AutoSave"] = true,
+    ["Auto Equip Rod"] = {
+        ["Enable"] = true,
+        ["Prioritize"] = {
+            ["No-Life Rod"] = 6,
+            ["Rod Of The Depths"] = 5,
+            ["Sunken Rod"] = 4,
+            ["Trident Rod"] = 3,
+            ["Aurora Rod"] = 2,
+            ["Steady Rod"] = 1
         }
-    }, 
+    },
+    ["Auto Quest"] = {
+        ["Auto Trident Rod"] = {
+            ["Enable"] = true,
+            ["Crab Cage Hop Server"] = true
+        },
+        ["Auto Rod Of The Depths"] = {
+			["Enable"] = true,
+            ["Crab Cage Hop Server"] = true
+		},
+        ["Auto No-Life Rod"] = {
+            ["Enable"] = true,
+            ["Auto Aurora Totem"] = true
+        },
+        ["Auto Rod Of The Forgotten Fang"] = {
+            ["Enable"] = false
+        }
+    },
     ["Auto Bait"] = {
-        ["Buy Bait"] = true,
-        ["Amount Buy Bait"] = 10,
-        ["Use Bait Random"] = false,
-        ["Select Bait"] = {
-            ["Enabled"] = true,
-            ["Bait"]  = "Night Shrimp",
+        ["Bait Crate"] = "Bait Crate",
+        ["Equip Random"] = true,
+        ["Infinite Bait"] = true,
+        ["Buy"] = true
+    },
+    ["Character"] = {
+        ["Disable Swim"] = true
+    },
+    ["Auto Buy Rod"] = {
+        ["Enable"] = true,
+        ["Rod"] = "Steady Rod"
+    },
+    ["Performance"] = {
+        ["Fullbright"] = true,
+        ["Boost FPS"] = true
+    },
+    ["Auto Treasure Map"] = true,
+    ["Performance Failsafe"] = {
+        ["Rejoin Timer"] = {
+            ["Minute"] = 60
         }
     },
-    ["Rejoin"] = {
-        ["Enabled"] = false,
-        ["Time"] = 60 ---minute
+    ["Auto Fish"] = {
+        ["Enable"] = true,
+        ["Fish Location"] = {
+            ["Height"] = 0,
+            ["Auto"] = true,
+            ["Zone"] = "The Depths"
+        },
+        ["Cast Threshold"] = 95,
+        ["Perfect Chance"] = 50,
+        ["Fail Chance"] = 5
     },
-    ["Hop Server"] = {
-        ["Hop Find WhirlPool Get Isonade"] = true,
-        ["Hop Server When Hight Ping"] = {
-            ["Enabled"] = false,
-            ["Ping"] = 100,
-        }
+    ["Auto Aurora Totem"] = {
+        ["Buy Aurora Rod"] = true
+    },
+    ["Auto Enchant Rod"] = {
+        ["Enable"] = true,
+        ["Rod"] = {
+            ["Aurora Rod"] = false,
+            ["Trident Rod"] = false,
+            ["Sunken Rod"] = false,
+            ["Rod Of The Depths"] = true,
+        },
+        ["Enchant"] = {
+            ["Lucky"] = false,
+            ["Divine"] = false,
+            ["Swift"] = false,
+            ["Steady"] = false,
+            ["Quality"] = false,
+            ["Hasty"] = true
+        },
+        ["Use Sundial if Day"] = true
     }
 }
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/refs/heads/main/BananaCat-KaitunFisch.lua"))()
+getgenv().Key = "k3d6cf304421330ebdc122c6"
+loadstring(game:HttpGet("https://nousigi.com/loader.lua"))() 
