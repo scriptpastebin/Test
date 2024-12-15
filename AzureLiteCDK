@@ -29,4 +29,4 @@ getgenv().FpsCap = 30
        MinFragment = 20000, --Farm After Max Level
     }
 getgenv().Team = "Pirates"
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6defa760de515eaa9b060a2aee22fbb8.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/vinhuchi/rblx/main/W-azure/BloxFruit/OneClickLoader.lua"))()
