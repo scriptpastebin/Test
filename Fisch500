@@ -84,11 +84,11 @@ getgenv().Config = {
             ["Rod Of The Depths"] = true,
         },
         ["Enchant"] = {
-            ["Lucky"] = true,
-            ["Divine"] = true,
-            ["Swift"] = true,
-            ["Steady"] = true,
-            ["Quality"] = true,
+            ["Lucky"] = false,
+            ["Divine"] = false,
+            ["Swift"] = false,
+            ["Steady"] = false,
+            ["Quality"] = false,
             ["Hasty"] = true
         },
         ["Use Sundial if Day"] = true
