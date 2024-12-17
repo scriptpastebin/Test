@@ -1,105 +1,98 @@
-repeat task.wait() until game:IsLoaded()
-repeat task.wait() until game.Players
-repeat task.wait() until game.Players.LocalPlayer
-repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
-_G.Team = "Pirate" -- Marine / Pirate
-getgenv().Script_Mode = "Kaitun_Script"
-_G.WebHook = {
-    ["Enabled"] = true, -- เปิดการใช้งาน
-    ["Url"] = "", -- ลิ้งค์เว็บฮุก
-    ["Delay"] = 60 -- วินาที
-}
-_G.MainSettings = {
-        ["EnabledHOP"] = true, -- เปิด HOP ( มันไม่มีอยู่ละใส่มาเท่ๆ )
-        ['FPSBOOST'] = true, -- ภาพกาก
-        ["FPSLOCKAMOUNT"] = 60, -- จำนวน FPS
-        ['WhiteScreen'] = true, -- จอขาว
-        ['WhiteScreen'] = false, -- จอขาว
-        ['CloseUI'] = true, -- ปิด Ui
-        ["NotifycationExPRemove"] = true, -- ลบ ExP ที่เด้งตอนฆ่ามอน
-        ['AFKCheck'] = 150, -- ถ้ายืนนิ่งเกินวิที่ตั้งมันจะรีเกม
-        ["LockFragments"] = 20000, -- ล็อคเงินม่วง
-        ["LockFruitsRaid"] = { -- ล็อคผลที่ไม่เอาไปลงดัน
-            [1] = "Dough-Dough",
-            [2] = "Dragon-Dragon",
-            [3] = "Kitsune-Kitsune",
-            [4] = "Leopard-Leopard"
-        }
-    }
-_G.Fruits_Settings = { -- ตั้งค่าผล
-    ['Main_Fruits'] = {'Flame-Flame'}, -- ผลหลัก ถ้ายังไม่ใช่ค่าที่ตั้งมันจะกินจนกว่าจะใช่หรือซื้อ
-    ['Select_Fruits'] = {"Flame-Flame", "Ice-Ice", "Quake-Quake", "Light-Light", "Dark-Dark", "Spider-Spider", "Rumble-Rumble", "Magma-Magma", "Buddha-Buddha"} -- กินหรือซื้อตอนไม่มีผล
-}
-_G.Quests_Settings = { -- ตั้งค่าเควสหลักๆ
-    ['Rainbow_Haki'] = true,
-    ["MusketeerHat"] = false,
-    ["PullLever"] = false,
-    ['DoughQuests_Mirror'] = {
-        ['Enabled'] = true,
-        ['UseFruits'] = true
-    }        
-}
-_G.Races_Settings = { -- ตั้งค่าเผ่า
-    ['Race'] = {
-        ['EnabledEvo'] = true,
-        ["v2"] = true,
-        ["v3"] = true,
-        ["Races_Lock"] = {
-            ["Races"] = { -- Select Races U want
-                ["Mink"] = true,
-                ["Human"] = false,
-                ["Fishman"] = true
+getgenv().Config = {
+    ["Inventory"] = {
+        ["Auto Sell"] = {
+            ["Enable"] = true,
+            ["Rarity"] = {
+                ["Legendary"] = true,
+                ["Mythical"] = true
             },
-            ["RerollsWhenFragments"] = 20000 -- Random Races When Your Fragments is >= Settings
+            ["Delay"] = 5
         }
+    },
+    ["AutoSave"] = true,
+    ["Auto Equip Rod"] = {
+        ["Enable"] = true,
+        ["Prioritize"] = {
+            ["No-Life Rod"] = 6,
+            ["Rod Of The Depths"] = 5,
+            ["Sunken Rod"] = 4,
+            ["Trident Rod"] = 3,
+            ["Aurora Rod"] = 2,
+            ["Steady Rod"] = 1
+        }
+    },
+    ["Auto Quest"] = {
+        ["Auto Trident Rod"] = {
+            ["Enable"] = true,
+            ["Crab Cage Hop Server"] = true
+        },
+        ["Auto Rod Of The Depths"] = {
+			["Enable"] = true,
+            ["Crab Cage Hop Server"] = true
+		},
+        ["Auto No-Life Rod"] = {
+            ["Enable"] = true,
+            ["Auto Aurora Totem"] = true
+        },
+        ["Auto Rod Of The Forgotten Fang"] = {
+            ["Enable"] = false
+        }
+    },
+    ["Auto Bait"] = {
+        ["Bait Crate"] = "Bait Crate",
+        ["Equip Random"] = true,
+        ["Infinite Bait"] = true,
+        ["Buy"] = true
+    },
+    ["Character"] = {
+        ["Disable Swim"] = true
+    },
+    ["Auto Buy Rod"] = {
+        ["Enable"] = true,
+        ["Rod"] = "Steady Rod"
+    },
+    ["Performance"] = {
+        ["Fullbright"] = true,
+        ["Boost FPS"] = true
+    },
+    ["Auto Treasure Map"] = true,
+    ["Performance Failsafe"] = {
+        ["Rejoin Timer"] = {
+            ["Minute"] = 60
+        }
+    },
+    ["Auto Fish"] = {
+        ["Enable"] = true,
+        ["Fish Location"] = {
+            ["Height"] = 0,
+            ["Auto"] = true,
+            ["Zone"] = "The Depths"
+        },
+        ["Cast Threshold"] = 95,
+        ["Perfect Chance"] = 50,
+        ["Fail Chance"] = 5
+    },
+    ["Auto Aurora Totem"] = {
+        ["Buy Aurora Rod"] = true
+    },
+    ["Auto Enchant Rod"] = {
+        ["Enable"] = true,
+        ["Rod"] = {
+            ["Aurora Rod"] = false,
+            ["Trident Rod"] = false,
+            ["Sunken Rod"] = false,
+            ["Rod Of The Depths"] = true,
+        },
+        ["Enchant"] = {
+            ["Lucky"] = false,
+            ["Divine"] = false,
+            ["Swift"] = false,
+            ["Steady"] = false,
+            ["Quality"] = false,
+            ["Hasty"] = true
+        },
+        ["Use Sundial if Day"] = true
     }
 }
-_G.Settings_Melee = { -- หมัดที่จะทำ
-    ['Superhuman'] = true,
-    ['DeathStep'] = true,
-    ['SharkmanKarate'] = true,
-    ['ElectricClaw'] = true,
-    ['DragonTalon'] = true,
-    ['Godhuman'] = true
-}
-_G.FarmMastery_Settings = {
-    ['Melee'] = true,
-    ['Sword'] = true,
-    ['DevilFruits'] = false,
-    ['Select_Swords'] = {
-        ["AutoSettings"] = true, -- ถ้าเปิดอันนี้มันจะเลือกดาบให้เองหรือฟาร์มทุกดาบนั่นเอง
-        ["ManualSettings"] = { -- ถ้าปรับ AutoSettings เป็น false มันจะฟาร์มดาบที่เลือกตรงนี้ ตัวอย่างข้างล่าง
-            "Saber",
-            "Buddy Sword"
-        }
-    }
-}
-_G.SwordSettings = { -- ดาบที่จะทำ
-    ['Saber'] = true,
-    ["Pole"] = false,
-    ['MidnightBlade'] = true,
-    ['Shisui'] = true,
-    ['Saddi'] = true,
-    ['Wando'] = true,
-    ['Yama'] = true,
-    ['Rengoku'] = true,
-    ['Canvander'] = false,
-    ['BuddySword'] = true,
-    ['TwinHooks'] = false,
-    ['HallowScryte'] = true,
-    ['TrueTripleKatana'] = true,
-    ['CursedDualKatana'] = true
-}
-_G.SharkAnchor_Settings = {
-    ["Enabled_Farm"] = false,
-    ['FarmAfterMoney'] = 2500000
-}
-_G.GunSettings = { -- ปืนที่จะทำ
-    ['Kabucha'] = true,
-    ['SerpentBow'] = true,
-    ['SoulGuitar'] = true
-}
-getgenv().Key = "MARU-C21SL-FA49F-ZH5P-LHHM5-HRZE8"
-getgenv().id = "823163528407547924"
-getgenv().Script_Mode = "Kaitun_Script"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
+getgenv().Key = "k3d6cf304421330ebdc122c6"
+loadstring(game:HttpGet("https://nousigi.com/loader.lua"))() 
