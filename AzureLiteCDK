@@ -1,104 +1,102 @@
-repeat task.wait() until game:IsLoaded()
-repeat task.wait() until game.Players
-repeat task.wait() until game.Players.LocalPlayer
-repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
-_G.Team = "Pirate" -- Marine / Pirate
-getgenv().Script_Mode = "Kaitun_Script"
-_G.WebHook = {
-    ["Enabled"] = true, -- เปิดการใช้งาน
-    ["Url"] = "", -- ลิ้งค์เว็บฮุก
-    ["Delay"] = 60 -- วินาที
-}
-_G.MainSettings = {
-        ["EnabledHOP"] = true, -- เปิด HOP ( มันไม่มีอยู่ละใส่มาเท่ๆ )
-        ['FPSBOOST'] = true, -- ภาพกาก
-        ["FPSLOCKAMOUNT"] = 60, -- จำนวน FPS
-        ['WhiteScreen'] = true, -- จอขาว
-        ['CloseUI'] = true, -- ปิด Ui
-        ["NotifycationExPRemove"] = true, -- ลบ ExP ที่เด้งตอนฆ่ามอน
-        ['AFKCheck'] = 150, -- ถ้ายืนนิ่งเกินวิที่ตั้งมันจะรีเกม
-        ["LockFragments"] = 20000, -- ล็อคเงินม่วง
-        ["LockFruitsRaid"] = { -- ล็อคผลที่ไม่เอาไปลงดัน
-            [1] = "Dough-Dough",
-            [2] = "Kitsune-Kitsune",
-            [3] = "Leopard-Leopard",
-            [4] = "Dragon-Dragon"
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+getgenv().Key = "9c3329abb8b3f1872d7ca524"
+getgenv().SettingFarm = {
+    ["Hide UI"] = false,
+    ["White Screen"] = false,
+    ["Auto Sell"] = {
+        ["Enabled"] = true,
+        ["Rarity"] = {
+            Legendary = true,
+            Mythical = true, 
+            Exotic = true,
+            Limited = true,
+            Divine = true,
+            Relic = true,
         }
-    }
-_G.Fruits_Settings = { -- ตั้งค่าผล
-    ['Main_Fruits'] = {'Flame-Flame'}, -- ผลหลัก ถ้ายังไม่ใช่ค่าที่ตั้งมันจะกินจนกว่าจะใช่หรือซื้อ
-    ['Select_Fruits'] = {"Flame-Flame", "Ice-Ice", "Quake-Quake", "Light-Light", "Dark-Dark", "Spider-Spider", "Rumble-Rumble", "Magma-Magma", "Buddha-Buddha"} -- กินหรือซื้อตอนไม่มีผล
-}
-_G.Quests_Settings = { -- ตั้งค่าเควสหลักๆ
-    ['Rainbow_Haki'] = true,
-    ["MusketeerHat"] = true,
-    ["PullLever"] = true,
-    ['DoughQuests_Mirror'] = {
-        ['Enabled'] = true,
-        ['UseFruits'] = true
-    }        
-}
-_G.Races_Settings = { -- ตั้งค่าเผ่า
-    ['Race'] = {
-        ['EnabledEvo'] = true,
-        ["v2"] = true,
-        ["v3"] = true,
-        ["Races_Lock"] = {
-            ["Races"] = { -- Select Races U want
-                ["Mink"] = true,
-                ["Human"] = false,
-                ["Fishman"] = true
+    },
+    ["Webhook"] = {
+        ["Fish Catched"] = {
+            ["Enable"] = false,
+            ["Minimum Weight"] = 1000,
+            ["Rarity"] = {
+                ["Mythical"] = true,
+                ["Exotic"] = true,
+                ["Divine"] = true,
+                ["Relic"] = true,
+                ["Limited"] = true
+            }
+        },
+        ["URL"] = ""
+    },
+    ["Auto Buy Luck"] = true, -- have trident rod
+    ["Get Rod"] = { --- Trident Rod and Rod of the depth it will auto get dont need config
+        ["Aurora Rod"] = {
+            ["Enabled"] = true,
+            ["Auto Buy Aurora Totem"] = true --- if have  rod of the depth it will buy
+        },
+        ["Sunken Rod"] = true,
+
+    },
+        ["Set CFrame"] = { -- if have Rod Of the depths then will work
+        ["Enabled"] = true,
+        ["CFrame"] = CFrame.new(5802.84424, 135.301468, 403.946533, 0.991938531, -1.18916499e-09, -0.126719773, -8.93702778e-10, 1, -1.63799463e-08, 0.126719773, 1.63611507e-08, 0.991938531)
+    },
+    ["Auto Equip Rod"] = {
+        ["Rapid Rod"] = 1,
+        ["Aurora Rod"] = 2,
+        ["Trident Rod"] = 3,
+        ["Sunken Rod"] = 4,
+        ["Rod Of The Depths"] = 5,
+        ["No-Life Rod"] = 6,
+        ["Rod Of The Forgotten Fang"] = 7,
+    },
+    ["Get Rod"] = { --- Trident Rod and Rod of the depth it will auto get dont need config
+        ["Rod of The Forgotten Fang"] = false,
+        ["Aurora Rod"] = {
+            ["Enabled"] = true,
+            ["Auto Buy Aurora Totem"] = true --- if have  rod of the depth it will buy
+        },
+        ["Sunken Rod"] = true,
+    },
+    ["Auto Buy Luck"] = true, -- have trident rod
+    ["Event"] = {
+        ["Megalodon"] = {  --- have rod of the depth
+            ["Enabled"] = false,
+            ["Prioritize Rod"] = {
+                ["Enabled"] = false,
+                ["Name Rod"] = "No-Life Rod"
             },
-            ["RerollsWhenFragments"] = 20000 -- Random Races When Your Fragments is >= Settings
+        }
+    },
+    ["Auto Enchant"] = { -- have rod of the depths
+        ["Enabled"] = true,
+        ["Name Rod"] = "Rod Of The Depths",
+        ["Enchant"] = {"Clever"}, 
+        ["Auto Buy Relic"] = {
+            ["Enabled"] = true, 
+            ["Amount"] = 10
+        }
+    }, 
+    ["Auto Bait"] = {
+        ["Buy Bait"] = true,
+        ["Amount Buy Bait"] = 10,
+        ["Use Bait Random"] = true,
+        ["Select Bait"] = {
+            ["Enabled"] = false,
+            ["Bait"]  = "Rapid Catcher",
+        }
+    },
+    ["Rejoin"] = {
+        ["Enabled"] = true,
+        ["Time"] = 30 ---minute
+    },
+    ["Hop Server"] = {
+        ["Hop Find WhirlPool Get Isonade"] = true,
+        ["Hop Server When Hight Ping"] = {
+            ["Enabled"] = false,
+            ["Ping"] = 100,
         }
     }
 }
-_G.Settings_Melee = { -- หมัดที่จะทำ
-    ['Superhuman'] = true,
-    ['DeathStep'] = true,
-    ['SharkmanKarate'] = true,
-    ['ElectricClaw'] = true,
-    ['DragonTalon'] = true,
-    ['Godhuman'] = true
-}
-_G.FarmMastery_Settings = {
-    ['Melee'] = true,
-    ['Sword'] = true,
-    ['DevilFruits'] = true,
-    ['Select_Swords'] = {
-        ["AutoSettings"] = true, -- ถ้าเปิดอันนี้มันจะเลือกดาบให้เองหรือฟาร์มทุกดาบนั่นเอง
-        ["ManualSettings"] = { -- ถ้าปรับ AutoSettings เป็น false มันจะฟาร์มดาบที่เลือกตรงนี้ ตัวอย่างข้างล่าง
-            "Saber",
-            "Buddy Sword"
-        }
-    }
-}
-_G.SwordSettings = { -- ดาบที่จะทำ
-    ['Saber'] = true,
-    ["Pole"] = true,
-    ['MidnightBlade'] = true,
-    ['Shisui'] = true,
-    ['Saddi'] = true,
-    ['Wando'] = true,
-    ['Yama'] = true,
-    ['Rengoku'] = true,
-    ['Canvander'] = true,
-    ['BuddySword'] = true,
-    ['TwinHooks'] = true,
-    ['HallowScryte'] = true,
-    ['TrueTripleKatana'] = true,
-    ['CursedDualKatana'] = true
-}
-_G.SharkAnchor_Settings = {
-    ["Enabled_Farm"] = false,
-    ['FarmAfterMoney'] = 2500000
-}
-_G.GunSettings = { -- ปืนที่จะทำ
-    ['Kabucha'] = true,
-    ['SerpentBow'] = true,
-    ['SoulGuitar'] = true
-}
-getgenv().Key = "MARU-C21SL-FA49F-ZH5P-LHHM5-HRZE8"
-getgenv().id = "823163528407547924"
-getgenv().Script_Mode = "Kaitun_Script"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/refs/heads/main/BananaCat-KaitunFisch.lua"))()
