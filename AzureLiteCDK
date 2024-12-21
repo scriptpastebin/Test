@@ -1,8 +1,8 @@
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 getgenv().Key = "9c3329abb8b3f1872d7ca524"
 getgenv().SettingFarm = {
-    ["Hide UI"] = false,
-    ["White Screen"] = false,
+    ["Hide UI"] = true,
+    ["White Screen"] = true,
     ["Auto Sell"] = {
         ["Enabled"] = true,
         ["Rarity"] = {
@@ -28,7 +28,7 @@ getgenv().SettingFarm = {
         },
         ["URL"] = ""
     },
-    ["Auto Buy Luck"] = true, -- have trident rod
+    ["Auto Buy Luck"] = false, -- have trident rod
     ["Get Rod"] = { --- Trident Rod and Rod of the depth it will auto get dont need config
         ["Aurora Rod"] = {
             ["Enabled"] = true,
@@ -58,7 +58,7 @@ getgenv().SettingFarm = {
         },
         ["Sunken Rod"] = true,
     },
-    ["Auto Buy Luck"] = true, -- have trident rod
+    ["Auto Buy Luck"] = false, -- have trident rod
     ["Event"] = {
         ["Megalodon"] = {  --- have rod of the depth
             ["Enabled"] = false,
@@ -70,7 +70,7 @@ getgenv().SettingFarm = {
     },
     ["Auto Enchant"] = { -- have rod of the depths
         ["Enabled"] = true,
-        ["Name Rod"] = "Rod Of The Depths",
+        ["Name Rod"] = "Rod of the depth",
         ["Enchant"] = {"Clever"}, 
         ["Auto Buy Relic"] = {
             ["Enabled"] = true, 
@@ -82,7 +82,7 @@ getgenv().SettingFarm = {
         ["Amount Buy Bait"] = 10,
         ["Use Bait Random"] = true,
         ["Select Bait"] = {
-            ["Enabled"] = false,
+            ["Enabled"] = true,
             ["Bait"]  = "Rapid Catcher",
         }
     },
