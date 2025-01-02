@@ -59,7 +59,7 @@ _G.Settings_Melee = { -- หมัดที่จะทำ
 }
 _G.FarmMastery_Settings = {
     ['Melee'] = true,
-    ['Sword'] = true,
+    ['Sword'] = false,
     ['DevilFruits'] = false,
     ['Select_Swords'] = {
         ["AutoSettings"] = true, -- ถ้าเปิดอันนี้มันจะเลือกดาบให้เองหรือฟาร์มทุกดาบนั่นเอง
@@ -73,26 +73,26 @@ _G.SwordSettings = { -- ดาบที่จะทำ
     ['Saber'] = true,
     ["Pole"] = false,
     ['MidnightBlade'] = true,
-    ['Shisui'] = true,
-    ['Saddi'] = true,
-    ['Wando'] = true,
+    ['Shisui'] = false,
+    ['Saddi'] = false,
+    ['Wando'] = false,
     ['Yama'] = true,
     ['Rengoku'] = false,
     ['Canvander'] = false,
-    ['BuddySword'] = true,
+    ['BuddySword'] = false,
     ['TwinHooks'] = false,
     ['HallowScryte'] = true,
     ['TrueTripleKatana'] = false,
-    ['CursedDualKatana'] = true
+    ['CursedDualKatana'] = false
 }
 _G.SharkAnchor_Settings = {
     ["Enabled_Farm"] = false,
     ['FarmAfterMoney'] = 2500000
 }
 _G.GunSettings = { -- ปืนที่จะทำ
-    ['Kabucha'] = true,
-    ['SerpentBow'] = true,
-    ['SoulGuitar'] = true
+    ['Kabucha'] = false,
+    ['SerpentBow'] = false,
+    ['SoulGuitar'] = false
 }
 (getgenv()).key = "MARU8JK3EQIUJW9JO5TVG07VDH";
 (getgenv()).id = "823163528407547924";
