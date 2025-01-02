@@ -89,7 +89,7 @@ getgenv().Config = {
             ["Swift"] = false,
             ["Steady"] = false,
             ["Quality"] = false,
-            ["Hasty"] = true
+            ["Clever"] = true
         },
         ["Use Sundial if Day"] = true
     }
