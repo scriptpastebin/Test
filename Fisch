@@ -79,7 +79,7 @@ getgenv().Config = {
         ["Enable"] = true,
         ["Rod"] = {
             ["Aurora Rod"] = false,
-            ["Trident Rod"] = false,
+            ["Trident Rod"] = true,
             ["Sunken Rod"] = false,
             ["Rod Of The Depths"] = true,
         },
