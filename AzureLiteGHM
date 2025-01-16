@@ -1,5 +1,5 @@
 -- Buyer Perm key KAITUN Godhuman 
-script_key = "S2KZFO4RWGGYTBPI433O77X37XXPD57N7HF35KNXXI"
+script_key = "RCP3TBMPSW6Z7E5X433O77X36LSMV5XD6PF35KNXXI"
 getgenv().Shutdown = false -- shutdown server it fail hop
 getgenv().Configs = {
     ["Team"] = "Pirates",
@@ -16,6 +16,7 @@ getgenv().Configs = {
     ["Skull Guitar"] = false, -- Farm SG First
     ["Find Fruit"] = true, -- Will find 1m+ fruit BUT HOP GAME broken idk why
     ["Cursed Dual Katana"] = false, --  Finish  cdk
-    ["Switch Melee"] = true -- godhuman ontop
+    ["Switch Melee"] = true,
+    ["Buy Stuffs"] = true
 }
 repeat task.wait(1) pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/verudous/Xero-Hub/refs/heads/main/kaitun.lua"))()end) until getgenv().Check_Execute
