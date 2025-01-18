@@ -19,4 +19,4 @@ getgenv().Configs = {
     ["Switch Melee"] = true,
     ["Buy Stuffs"] = true
 }
-repeat task.wait(1) pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/verudous/Xero-Hub/refs/heads/main/kaitun.lua"))()end) until getgenv().Check_Execute
+repeat task.wait() pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/kaitun.lua"))() end) until getgenv().Check_Execute
