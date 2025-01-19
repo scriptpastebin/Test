@@ -31,7 +31,7 @@ getgenv().Config = {
             ["Crab Cage Hop Server"] = true
 		},
         ["Auto No-Life Rod"] = {
-            ["Enable"] = true,
+            ["Enable"] = false,
             ["Auto Aurora Totem"] = false
         },
         ["Auto Rod Of The Forgotten Fang"] = {
@@ -80,7 +80,7 @@ getgenv().Config = {
         ["Rod"] = {
             ["Aurora Rod"] = false,
             ["Trident Rod"] = true,
-            ["Sunken Rod"] = false,
+            ["Sunken Rod"] = true,
             ["Rod Of The Depths"] = true,
         },
         ["Enchant"] = {
